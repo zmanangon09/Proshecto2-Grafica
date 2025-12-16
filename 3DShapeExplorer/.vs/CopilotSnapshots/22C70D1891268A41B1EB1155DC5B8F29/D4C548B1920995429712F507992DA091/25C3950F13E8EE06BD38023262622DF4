@@ -1,0 +1,230 @@
+﻿using System;
+using System.Drawing;
+using System.Windows.Forms;
+using _3D_SHAPE_EXPLORER.Services;
+
+namespace _3D_SHAPE_EXPLORER.Forms
+{
+    /// <summary>
+    /// Formulario que muestra la ayuda de controles y funcionalidades de la aplicación
+    /// </summary>
+    public partial class HelpForm : Form
+    {
+        public HelpForm()
+        {
+            InitializeComponent();
+        }
+
+        private void InitializeComponent()
+        {
+            this.Text = "📖 Ayuda - 3D Shape Explorer";
+            this.Size = new Size(550, 650);
+            this.StartPosition = FormStartPosition.CenterParent;
+            this.BackColor = Color.FromArgb(30, 30, 30);
+            this.ForeColor = Color.White;
+            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+
+            // Panel principal con scroll
+            var panel = new Panel
+            {
+                Dock = DockStyle.Fill,
+                AutoScroll = true,
+                Padding = new Padding(10)
+            };
+
+            // RichTextBox para mostrar la ayuda con formato
+            var rtbHelp = new RichTextBox
+            {
+                Dock = DockStyle.Fill,
+                BackColor = Color.FromArgb(25, 25, 25),
+                ForeColor = Color.White,
+                Font = new Font("Consolas", 10),
+                ReadOnly = true,
+                BorderStyle = BorderStyle.None,
+                Text = GetHelpText()
+            };
+
+            // Colorear el texto
+            ColorizeHelp(rtbHelp);
+
+            panel.Controls.Add(rtbHelp);
+            this.Controls.Add(panel);
+
+            // Botón cerrar
+            var btnClose = new Button
+            {
+                Text = "Cerrar",
+                Size = new Size(100, 35),
+                Location = new Point(this.ClientSize.Width / 2 - 50, this.ClientSize.Height - 50),
+                BackColor = Color.FromArgb(60, 60, 60),
+                ForeColor = Color.White,
+                FlatStyle = FlatStyle.Flat,
+                Anchor = AnchorStyles.Bottom
+            };
+            btnClose.Click += (s, e) => this.Close();
+            this.Controls.Add(btnClose);
+            btnClose.BringToFront();
+        }
+
+        private string GetHelpText()
+        {
+            return @"
+╔══════════════════════════════════════════════════╗
+║       🎮 3D SHAPE EXPLORER - MANUAL DE USO       ║
+╚══════════════════════════════════════════════════╝
+
+══════════════════════════════════════════════════
+ 📷 CONTROLES DE CÁMARA
+══════════════════════════════════════════════════
+
+ La cámara permite observar la escena desde 
+ diferentes ángulos (sistema orbital).
+
+ ROTACIÓN:
+   ← →     Rotar horizontalmente (Yaw)
+   ↑ ↓     Rotar verticalmente (Pitch)
+
+ ZOOM:
+   +       Acercar cámara
+   -       Alejar cámara
+
+ VISTAS PREDEFINIDAS:
+   F1      Vista Frontal
+   F2      Vista Superior (Top)
+   F3      Vista Lateral Derecha
+   F4      Vista Lateral Izquierda
+   F5      Vista Isométrica
+   Home    Reiniciar cámara
+
+══════════════════════════════════════════════════
+ 🔄 TRANSFORMACIONES DE FIGURAS
+══════════════════════════════════════════════════
+
+ Primero selecciona una figura haciendo clic.
+ La figura seleccionada se resalta en naranja.
+
+ ROTACIÓN:
+   NumPad 4/6    Rotar en eje X
+   NumPad 8/2    Rotar en eje Y
+   A / D         Rotar en eje Z
+
+ ESCALA:
+   W             Aumentar tamaño
+   S             Reducir tamaño
+
+ TRASLACIÓN:
+   J / L         Mover en eje X (izq/der)
+   I / K         Mover en eje Y (arriba/abajo)
+   U / O         Mover en eje Z (cerca/lejos)
+
+══════════════════════════════════════════════════
+ ✏️ MODO DE EDICIÓN
+══════════════════════════════════════════════════
+
+ Cambia a 'Edition Mode' para editar componentes
+ individuales de las figuras.
+
+ 🟢 VÉRTICES:
+   Haz clic en un punto para seleccionarlo.
+   Luego usa las teclas de traslación/escala.
+
+ 📏 ARISTAS:
+   Haz clic cerca de una línea para seleccionarla.
+   Se transforman ambos vértices de la arista.
+
+ 🧊 CARAS:
+   Haz clic dentro de una cara para seleccionarla.
+   Se transforman todos los vértices de esa cara.
+
+══════════════════════════════════════════════════
+ 🎨 PINTAR FIGURAS
+══════════════════════════════════════════════════
+
+ 1. Activa el modo 'Paint Figures'
+ 2. Haz clic en el botón de paleta para 
+    seleccionar un color
+ 3. Haz clic en cualquier figura para pintarla
+
+ La iluminación básica crea sombras automáticas
+ basadas en la orientación de las caras.
+
+══════════════════════════════════════════════════
+ 🗑️ ELIMINAR FIGURAS
+══════════════════════════════════════════════════
+
+ Delete / Backspace    Eliminar figura seleccionada
+
+══════════════════════════════════════════════════
+ 🧩 AGREGAR FIGURAS
+══════════════════════════════════════════════════
+
+ Usa el selector de figuras en la barra superior.
+ Las figuras disponibles son:
+
+   🧊 Cubo           - 6 caras cuadradas
+   🧱 Cilindro       - Superficie curva
+   🧿 Dodecagonal    - Prisma de 12 lados
+   🔶 Octaedro       - 8 caras triangulares
+   🔺 Pirámide       - Base cuadrada, 4 caras
+
+ Cada figura nueva aparece a la derecha de la
+ anterior para evitar superposiciones.
+
+══════════════════════════════════════════════════
+ 💡 CONSEJOS
+══════════════════════════════════════════════════
+
+ • Usa la vista isométrica (F5) para mejor 
+   percepción de profundidad.
+ 
+ • La rejilla y los ejes XYZ te ayudan a 
+   orientarte en el espacio 3D.
+
+ • El punto rojo indica el centro de cada figura.
+
+ • La información de cámara y escena aparece
+   en la esquina inferior izquierda.
+
+";
+        }
+
+        private void ColorizeHelp(RichTextBox rtb)
+        {
+            // Colorear títulos de sección
+            string[] sections = { "CONTROLES DE CÁMARA", "TRANSFORMACIONES", "MODO DE EDICIÓN", 
+                                  "PINTAR FIGURAS", "ELIMINAR", "AGREGAR FIGURAS", "CONSEJOS" };
+            
+            foreach (var section in sections)
+            {
+                int index = rtb.Text.IndexOf(section);
+                while (index >= 0)
+                {
+                    rtb.Select(index, section.Length);
+                    rtb.SelectionColor = Color.Cyan;
+                    index = rtb.Text.IndexOf(section, index + 1);
+                }
+            }
+
+            // Colorear teclas
+            string[] keys = { "←", "→", "↑", "↓", "+", "-", "F1", "F2", "F3", "F4", "F5", "Home",
+                             "NumPad", "A", "D", "W", "S", "J", "L", "I", "K", "U", "O", 
+                             "Delete", "Backspace" };
+            
+            foreach (var key in keys)
+            {
+                int index = rtb.Text.IndexOf(key);
+                while (index >= 0)
+                {
+                    rtb.Select(index, key.Length);
+                    rtb.SelectionColor = Color.Yellow;
+                    index = rtb.Text.IndexOf(key, index + 1);
+                }
+            }
+
+            // Reset selección
+            rtb.Select(0, 0);
+        }
+    }
+}

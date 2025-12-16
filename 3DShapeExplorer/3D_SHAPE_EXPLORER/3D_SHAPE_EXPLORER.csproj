@@ -58,6 +58,12 @@
     <Compile Include="Forms\ColorPickerForm.Designer.cs">
       <DependentUpon>ColorPickerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Models\Cone.cs" />
+    <Compile Include="Models\Sphere.cs" />
+    <Compile Include="Services\CameraController.cs" />
     <Compile Include="Services\MouseClickHandler.cs" />
     <Compile Include="Services\SceneManager.cs" />
     <Compile Include="Services\ShapePainter.cs" />
@@ -89,6 +95,7 @@
     <Compile Include="Utils\FloodFillDFS.cs" />
     <Compile Include="Utils\Projection3D.cs" />
     <Compile Include="Utils\ShapeFactory.cs" />
+    <Compile Include="Utils\TooltipManager.cs" />
     <EmbeddedResource Include="Forms\ColorPickerForm.resx">
       <DependentUpon>ColorPickerForm.cs</DependentUpon>
     </EmbeddedResource>
