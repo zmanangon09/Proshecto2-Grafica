@@ -90,5 +90,14 @@ namespace _3D_SHAPE_EXPLORER.Services
             }
             return info;
         }
+        /// <summary>
+        /// Deselecciona cualquier componente (vértice, arista o cara) seleccionado actualmente.
+        /// </summary>
+        public void ClearSelection()
+        {
+            SelectedVertexIndex = null;
+            SelectedEdge = null;
+            SelectedFace = null;
+        }
     }
 }

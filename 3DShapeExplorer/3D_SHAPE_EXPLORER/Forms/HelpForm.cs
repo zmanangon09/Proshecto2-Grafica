@@ -1,258 +1,172 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-using _3D_SHAPE_EXPLORER.Services;
+using Guna.UI2.WinForms;
 
 namespace _3D_SHAPE_EXPLORER.Forms
 {
-    /// <summary>
-    /// Formulario que muestra la ayuda de controles y funcionalidades de la aplicación
-    /// </summary>
     public partial class HelpForm : Form
     {
-        public HelpForm()
+        private RichTextBox rtbHelp;
+        private Guna2Button btnClose;
+        private Panel containerPanel;
+        private Timer fadeTimer;
+        private bool isDarkMode;
+
+        public HelpForm(bool isDarkMode)
         {
-            InitializeComponent();
+            this.isDarkMode = isDarkMode;
+            this.Opacity = 0;
+
+            InitializeComponent(); // Esto queda como lo genera Visual Studio
+
+            ApplyThemeColors();    // Aplicamos colores dinámicos aquí
+            ApplyCustomLogic();
+            SetupFadeIn();
+        }
+
+        private void ApplyThemeColors()
+        {
+            Color bgColor = isDarkMode ? Color.FromArgb(30, 30, 30) : Color.FromArgb(240, 240, 245);
+            Color rtbBg = isDarkMode ? Color.FromArgb(25, 25, 25) : Color.White;
+            Color textC = isDarkMode ? Color.White : Color.FromArgb(30, 30, 30);
+            Color btnBg = isDarkMode ? Color.FromArgb(60, 60, 60) : Color.FromArgb(200, 200, 205);
+
+            this.BackColor = bgColor;
+            this.rtbHelp.BackColor = rtbBg;
+            this.rtbHelp.ForeColor = textC;
+            this.btnClose.FillColor = btnBg;
+            this.btnClose.ForeColor = textC;
+        }
+
+        private void ApplyCustomLogic()
+        {
+            this.Icon = SystemIcons.Information;
+            rtbHelp.Text = GetHelpText();
+            ColorizeHelp();
+
+            btnClose.Click += (s, e) => this.Close();
+
+            // Centrar botón
+            int x = (this.ClientSize.Width / 2) - (btnClose.Width / 2);
+            int y = this.ClientSize.Height - btnClose.Height - 15;
+            btnClose.Location = new Point(x, y);
         }
 
         private void InitializeComponent()
         {
-            this.Text = "?? Ayuda - 3D Shape Explorer";
-            this.Size = new Size(600, 700);
-            this.StartPosition = FormStartPosition.CenterParent;
-            this.BackColor = Color.FromArgb(30, 30, 30);
-            this.ForeColor = Color.White;
-            this.FormBorderStyle = FormBorderStyle.FixedDialog;
+            this.rtbHelp = new System.Windows.Forms.RichTextBox();
+            this.btnClose = new Guna.UI2.WinForms.Guna2Button();
+            this.containerPanel = new System.Windows.Forms.Panel();
+            this.containerPanel.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // rtbHelp
+            // 
+            this.rtbHelp.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtbHelp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbHelp.Font = new System.Drawing.Font("Consolas", 11F);
+            this.rtbHelp.Location = new System.Drawing.Point(0, 0);
+            this.rtbHelp.Name = "rtbHelp";
+            this.rtbHelp.ReadOnly = true;
+            this.rtbHelp.Size = new System.Drawing.Size(580, 600);
+            this.rtbHelp.TabIndex = 0;
+            this.rtbHelp.Text = "";
+            // 
+            // btnClose
+            // 
+            this.btnClose.BorderRadius = 8;
+            this.btnClose.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.btnClose.ForeColor = System.Drawing.Color.White;
+            this.btnClose.Location = new System.Drawing.Point(0, 0);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(107, 37);
+            this.btnClose.TabIndex = 1;
+            this.btnClose.Text = "ENTENDIDO";
+            // 
+            // containerPanel
+            // 
+            this.containerPanel.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.containerPanel.Controls.Add(this.rtbHelp);
+            this.containerPanel.Controls.Add(this.btnClose);
+            this.containerPanel.Location = new System.Drawing.Point(12, 12);
+            this.containerPanel.Name = "containerPanel";
+            this.containerPanel.Size = new System.Drawing.Size(580, 600);
+            this.containerPanel.TabIndex = 0;
+            // 
+            // HelpForm
+            // 
+            this.ClientSize = new System.Drawing.Size(598, 664);
+            this.Controls.Add(this.containerPanel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
+            this.Name = "HelpForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Ayuda y Controles";
+            this.containerPanel.ResumeLayout(false);
+            this.ResumeLayout(false);
 
-            // Panel principal con scroll
-            var panel = new Panel
-            {
-                Dock = DockStyle.Fill,
-                AutoScroll = true,
-                Padding = new Padding(10)
-            };
-
-            // RichTextBox para mostrar la ayuda con formato
-            var rtbHelp = new RichTextBox
-            {
-                Dock = DockStyle.Fill,
-                BackColor = Color.FromArgb(25, 25, 25),
-                ForeColor = Color.White,
-                Font = new Font("Consolas", 10),
-                ReadOnly = true,
-                BorderStyle = BorderStyle.None,
-                Text = GetHelpText()
-            };
-
-            // Colorear el texto
-            ColorizeHelp(rtbHelp);
-
-            panel.Controls.Add(rtbHelp);
-            this.Controls.Add(panel);
-
-            // Botón cerrar
-            var btnClose = new Button
-            {
-                Text = "Cerrar",
-                Size = new Size(100, 35),
-                Location = new Point(this.ClientSize.Width / 2 - 50, this.ClientSize.Height - 50),
-                BackColor = Color.FromArgb(60, 60, 60),
-                ForeColor = Color.White,
-                FlatStyle = FlatStyle.Flat,
-                Anchor = AnchorStyles.Bottom
-            };
-            btnClose.Click += (s, e) => this.Close();
-            this.Controls.Add(btnClose);
-            btnClose.BringToFront();
         }
 
         private string GetHelpText()
         {
             return @"
-??????????????????????????????????????????????????????
-?        ?? 3D SHAPE EXPLORER - MANUAL DE USO        ?
-?     Herramienta de Computación Gráfica 3D          ?
-??????????????????????????????????????????????????????
+======================================================
+      3D SHAPE EXPLORER - GUÍA DE USUARIO
+======================================================
 
-??????????????????????????????????????????????????????
- ?? SISTEMA DE CÁMARA ORBITAL
-??????????????????????????????????????????????????????
+[ TECLAS DE CONTROL ]
+------------------------------------------------------
+• CÁMARA:   Flechas (Girar) / [+] [-] (Zoom)
+• ESCALA:   [W] Aumentar / [S] Reducir
+• MOVER:    [J][L] Eje X / [I][K] Eje Y / [U][O] Eje Z
+• ROTAR:    [A][D] Girar sobre eje Z
 
- La cámara permite observar la escena 3D desde 
- cualquier ángulo usando un sistema orbital.
+[ MODOS DE EDICIÓN ]
+------------------------------------------------------
+• Vértices: Selección de puntos (AZUL)
+• Aristas:  Selección de líneas (ROJO)
+• Caras:    Selección de superficies (PÚRPURA)
 
- ROTACIÓN DE CÁMARA:
-   ? ?     Rotar horizontalmente (Yaw)
-   ? ?     Rotar verticalmente (Pitch)
+[ ATAJOS ]
+------------------------------------------------------
+• F1-F4:    Cambiar vistas laterales
+• F5:       Vista Isométrica
+• CTRL+T:   Cambiar Modo Oscuro/Blanco
 
- ZOOM:
-   +       Acercar (Zoom In)
-   -       Alejar (Zoom Out)
-
- VISTAS PREDEFINIDAS:
-   F1      Vista Frontal
-   F2      Vista Superior (Top)
-   F3      Vista Lateral Derecha
-   F4      Vista Lateral Izquierda
-   F5      Vista Isométrica
-   Home    Reiniciar cámara al inicio
-
-??????????????????????????????????????????????????????
- ?? TRANSFORMACIONES GEOMÉTRICAS
-??????????????????????????????????????????????????????
-
- Selecciona una figura haciendo clic sobre ella.
- La figura seleccionada se resalta en naranja.
-
- ROTACIÓN (gira la figura):
-   NumPad 4/6    Rotar en eje X
-   NumPad 8/2    Rotar en eje Y
-   A / D         Rotar en eje Z
-
- ESCALA (cambia el tamaño):
-   W             Aumentar tamaño
-   S             Reducir tamaño
-
- TRASLACIÓN (mueve la figura):
-   J / L         Mover en eje X (izquierda/derecha)
-   I / K         Mover en eje Y (arriba/abajo)
-   U / O         Mover en eje Z (cerca/lejos)
-
-??????????????????????????????????????????????????????
- ?? MODO DE EDICIÓN
-??????????????????????????????????????????????????????
-
- Cambia a 'Edition Mode' en el selector de modo
- para editar componentes individuales.
-
- ?? VÉRTICES (puntos):
-   - Haz clic en un vértice para seleccionarlo
-   - Se resalta en AZUL
-   - Usa las teclas de traslación/escala
-
- ?? ARISTAS (líneas):
-   - Haz clic cerca de una arista
-   - Se resalta en ROJO
-   - Transforma ambos vértices de la arista
-
- ?? CARAS (superficies):
-   - Haz clic dentro de una cara
-   - Se resalta en PÚRPURA
-   - Transforma todos los vértices de la cara
-
-??????????????????????????????????????????????????????
- ?? SISTEMA DE COLOR E ILUMINACIÓN
-??????????????????????????????????????????????????????
-
- PINTAR FIGURAS:
- 1. Activa el modo 'Paint Figures'
- 2. Haz clic en el botón de paleta de colores
- 3. Selecciona un color
- 4. Haz clic en cualquier figura para pintarla
-
- ILUMINACIÓN:
- - El sistema incluye iluminación difusa básica
- - Las caras se sombrean según su orientación
- - La luz viene desde arriba-derecha-frente
-
-??????????????????????????????????????????????????????
- ?? FIGURAS 3D DISPONIBLES
-??????????????????????????????????????????????????????
-
-   ?? Cubo          Hexaedro regular, 6 caras
-   ?? Cilindro      Superficie curva, 2 tapas
-   ?? Cono          Base circular, 1 vértice
-   ? Esfera        Icosfera (aproximación)
-   ?? Pirámide      Base cuadrada, 4 caras lat.
-   ?? Octaedro      8 caras triangulares
-   ?? Dodecagonal   Prisma de 12 lados
-
-??????????????????????????????????????????????????????
- ??? OTRAS ACCIONES
-??????????????????????????????????????????????????????
-
- Delete/Backspace    Eliminar figura seleccionada
- F6                  Abrir esta ayuda
-
-??????????????????????????????????????????????????????
- ?? INDICADORES VISUALES
-??????????????????????????????????????????????????????
-
- • Ejes XYZ: Rojo=X, Verde=Y, Azul=Z
- • Rejilla: Plano de referencia XZ
- • Punto rojo: Centro de cada figura
- • Borde naranja: Figura seleccionada
- • Info inferior: Estado de cámara y escena
-
-??????????????????????????????????????????????????????
- ?? CONSEJOS DE USO
-??????????????????????????????????????????????????????
-
- • Usa F5 (isométrica) para mejor perspectiva 3D
- • La rejilla ayuda a posicionar figuras
- • Combina rotaciones para ver todos los ángulos
- • Cada figura nueva aparece automáticamente
-   separada de las anteriores
-
-??????????????????????????????????????????????????????
- ?? CONCEPTOS DE COMPUTACIÓN GRÁFICA
-??????????????????????????????????????????????????????
-
- PROYECCIÓN PERSPECTIVA:
- - Los objetos lejanos se ven más pequeños
- - Simula cómo vemos el mundo real
-
- TRANSFORMACIONES AFINES:
- - Traslación: Desplazamiento en el espacio
- - Rotación: Giro alrededor de un eje
- - Escalado: Cambio de tamaño proporcional
-
- ILUMINACIÓN DIFUSA:
- - Basada en el ángulo superficie-luz
- - Caras mirando la luz = más brillantes
- - Caras opuestas = más oscuras
-
-";
+------------------------------------------------------";
         }
 
-        private void ColorizeHelp(RichTextBox rtb)
+        private void ColorizeHelp()
         {
-            // Colorear títulos de sección
-            string[] sections = { "SISTEMA DE CÁMARA", "TRANSFORMACIONES", "MODO DE EDICIÓN", 
-                                  "SISTEMA DE COLOR", "FIGURAS 3D", "OTRAS ACCIONES",
-                                  "INDICADORES", "CONSEJOS", "CONCEPTOS" };
-            
-            foreach (var section in sections)
-            {
-                int index = rtb.Text.IndexOf(section);
-                while (index >= 0)
-                {
-                    rtb.Select(index, section.Length);
-                    rtb.SelectionColor = Color.Cyan;
-                    index = rtb.Text.IndexOf(section, index + 1);
-                }
-            }
+            Color sectionColor = isDarkMode ? Color.Cyan : Color.DodgerBlue;
+            HighlightText("[ TECLAS DE CONTROL ]", sectionColor, true);
+            HighlightText("[ MODOS DE EDICIÓN ]", sectionColor, true);
+            HighlightText("[ ATAJOS ]", sectionColor, true);
+        }
 
-            // Colorear teclas
-            string[] keys = { "?", "?", "?", "?", "+", "-", "F1", "F2", "F3", "F4", "F5", "F6", "Home",
-                             "NumPad", "A", "D", "W", "S", "J", "L", "I", "K", "U", "O", 
-                             "Delete", "Backspace" };
-            
-            foreach (var key in keys)
+        private void HighlightText(string word, Color color, bool bold)
+        {
+            int start = 0;
+            while ((start = rtbHelp.Find(word, start, RichTextBoxFinds.None)) != -1)
             {
-                int index = rtb.Text.IndexOf(key);
-                while (index >= 0)
-                {
-                    rtb.Select(index, key.Length);
-                    rtb.SelectionColor = Color.Yellow;
-                    index = rtb.Text.IndexOf(key, index + 1);
-                }
+                rtbHelp.Select(start, word.Length);
+                rtbHelp.SelectionColor = color;
+                if (bold) rtbHelp.SelectionFont = new Font(rtbHelp.Font, FontStyle.Bold);
+                start += word.Length;
             }
+        }
 
-            // Reset selección
-            rtb.Select(0, 0);
+        private void SetupFadeIn()
+        {
+            fadeTimer = new Timer { Interval = 15 };
+            fadeTimer.Tick += (s, e) => {
+                if (this.Opacity < 1) this.Opacity += 0.08;
+                else fadeTimer.Stop();
+            };
+            fadeTimer.Start();
         }
     }
 }

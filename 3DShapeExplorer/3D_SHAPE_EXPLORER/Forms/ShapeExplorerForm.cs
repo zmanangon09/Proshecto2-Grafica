@@ -1,260 +1,294 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Windows.Forms;
-using _3D_SHAPE_EXPLORER.Forms;
+﻿using _3D_SHAPE_EXPLORER.Forms;
 using _3D_SHAPE_EXPLORER.Models;
 using _3D_SHAPE_EXPLORER.Services;
 using _3D_SHAPE_EXPLORER.Utils;
 using Guna.UI2.WinForms;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Windows.Forms;
 
 namespace _3D_SHAPE_EXPLORER
 {
     public partial class ShapeExplorerForm : Form
     {
+        // SERVICIOS Y CONTROLADORES
         private SceneManager sceneManager = new SceneManager();
         private ShapeRenderer renderer = new ShapeRenderer();
         private KeyboardController inputController;
-        private string lastSelected = "";
-        private Color currentPaintColor = Color.Yellow;
         private MouseClickHandler mouseClickHandler;
+
+        // --- SISTEMA DE LUZ Y ANIMACIÓN ---
+        private Timer orbitTimer;
+        private float lightAngle = 0;
+        private bool isLightOrbiting = false;
+        private float orbitRadius = 400f;
+        private LightSource light = new LightSource();
+        private Point3D targetLightPos = new Point3D(500, -500, -500);
+
+        // --- UI ADICIONAL (Agregada por Código) ---
+        private Guna2Button btnOrbit;
+
+        // ESTADO DEL TEMA Y COLORES
+        private bool isDarkMode = true;
+        private Color accentColor = Color.FromArgb(94, 148, 255);
+        private Color currentPaintColor = Color.FromArgb(0, 122, 204);
 
         public ShapeExplorerForm()
         {
             InitializeComponent();
-            
-            // Inicializar SceneManager primero
+
+            // 1. Inicializar Componentes de UI manuales
+            InitializeCustomComponents();
+
+            // 2. Inicializar Motores
+            SetupOrbitTimer();
+            ApplyTheme();
+
+            // 3. Lógica de Negocio
             sceneManager.Initialize();
-            
-            // Inicializar controladores ANTES de configurar los ComboBox
-            // para evitar NullReferenceException cuando los eventos SelectedIndexChanged se disparen
             inputController = new KeyboardController(this, picCanvas, sceneManager);
-            inputController.OnStatusChanged += OnStatusChanged;
-            inputController.OnF6Pressed += ShowHelp;  // Conectar F6 al KeyboardController
-            
-            // Mouse Handler now uses new controls
+            inputController.OnF6Pressed += ShowHelp;
+
             mouseClickHandler = new MouseClickHandler(sceneManager, picCanvas,
-                            rbtnVertex, rbtnEdge, rbtnFace, rbtnPaint, currentPaintColor);
-            
-            // Configurar event handlers
+                                rbtnVertex, rbtnEdge, rbtnFace, rbtnPaint, currentPaintColor);
+
+            // 4. Configuración de Eventos
             SetupEventHandlers();
-            
-            // AHORA configurar los ComboBox (después de que inputController esté inicializado)
             SetupComboBoxFigures();
             SetupComboBoxMode();
-            
-            // Configurar el formulario para capturar teclas correctamente
+
             this.KeyPreview = true;
             this.Load += ShapeExplorerForm_Load;
         }
 
+        private void InitializeCustomComponents()
+        {
+            // 1. Creamos la instancia
+            btnOrbit = new Guna2Button();
+            btnOrbit.Name = "btnOrbit";
+            btnOrbit.Text = "💫 Orbitar Luz";
+            btnOrbit.Size = new Size(140, 40);
+
+            // 2. ESTILO (Copiamos el estilo de tus otros botones para que no desentone)
+            btnOrbit.BorderRadius = 8;
+            btnOrbit.Animated = true;
+            btnOrbit.FillColor = accentColor;
+            btnOrbit.ForeColor = Color.White;
+            btnOrbit.Font = new Font("Segoe UI Semibold", 9F);
+
+            // 3. POSICIONAMIENTO INTELIGENTE
+            // Buscamos el "papá" del botón de ayuda para meternos ahí también
+            if (btnHelp != null && btnHelp.Parent != null)
+            {
+                // Lo añadimos al mismo panel donde está el botón de ayuda
+                btnHelp.Parent.Controls.Add(btnOrbit);
+
+                // Lo ponemos justo debajo del botón de ayuda
+                btnOrbit.Location = new Point(btnHelp.Location.X, btnHelp.Location.Y + btnHelp.Height + 10);
+            }
+            else
+            {
+                // Si no encuentra el panel, lo pone en la esquina superior izquierda del formulario
+                this.Controls.Add(btnOrbit);
+                btnOrbit.Location = new Point(20, 20);
+            }
+
+            btnOrbit.BringToFront(); // Asegura que esté por encima de todo
+        }
+
+        private void SetupOrbitTimer()
+        {
+            orbitTimer = new Timer();
+            orbitTimer.Interval = 16; // 60 FPS
+            orbitTimer.Tick += (s, e) => {
+                if (isLightOrbiting)
+                {
+                    lightAngle += 0.03f;
+                    light.Position.X = (float)(Math.Cos(lightAngle) * orbitRadius);
+                    light.Position.Z = (float)(Math.Sin(lightAngle) * orbitRadius);
+                    light.Position.Y = (float)(Math.Sin(lightAngle * 0.5f) * 200) - 200;
+                }
+                picCanvas.Invalidate();
+            };
+        }
+
+        #region Sistema de Temas (Dark/Light)
+
+        private void ApplyTheme()
+        {
+            Color backColor = isDarkMode ? Color.FromArgb(18, 18, 20) : Color.FromArgb(242, 245, 250);
+            Color canvasColor = isDarkMode ? Color.FromArgb(28, 28, 32) : Color.White;
+            Color textColor = isDarkMode ? Color.White : Color.FromArgb(45, 45, 48);
+            Color panelColor = isDarkMode ? Color.FromArgb(35, 35, 38) : Color.FromArgb(225, 228, 234);
+            Color comboBg = isDarkMode ? Color.FromArgb(30, 30, 30) : Color.White;
+
+            light.AmbientColor = isDarkMode ? Color.FromArgb(35, 35, 40) : Color.FromArgb(110, 110, 120);
+
+            this.BackColor = backColor;
+            picCanvas.BackColor = canvasColor;
+
+            if (swTheme != null) swTheme.Checked = isDarkMode;
+
+            ConfigureGunaButton(btnReset, isDarkMode ? "🔄 Reset Vista" : "🔃 Reiniciar Vista", panelColor, textColor);
+            ConfigureGunaButton(btnHelp, isDarkMode ? "❓ Ayuda (F6)" : "💡 Ayuda (F6)", panelColor, textColor);
+            ConfigureGunaButton(btnOrbit, "💫 Orbitar Luz", panelColor, textColor); // Estilizar nuevo botón
+            ConfigureGunaButton(btnColor, "🎨 Color", currentPaintColor, Color.White);
+
+            ConfigureGunaCombo(cmbFigures, comboBg, textColor);
+            ConfigureGunaCombo(cmbMode, comboBg, textColor);
+
+            var radios = new[] { rbtnVertex, rbtnEdge, rbtnFace, rbtnPaint };
+            foreach (var rb in radios)
+            {
+                if (rb == null) continue;
+                rb.ForeColor = textColor;
+                rb.CheckedState.FillColor = accentColor;
+            }
+
+            if (lblOverlay != null)
+            {
+                lblOverlay.BackColor = isDarkMode ? Color.FromArgb(150, 0, 0, 0) : Color.FromArgb(150, 255, 255, 255);
+                lblOverlay.ForeColor = isDarkMode ? Color.FromArgb(0, 255, 127) : Color.FromArgb(0, 102, 204);
+            }
+
+            picCanvas.Invalidate();
+        }
+
+        private void ConfigureGunaButton(Guna2Button btn, string text, Color bg, Color textC)
+        {
+            if (btn == null) return;
+            btn.Text = text;
+            btn.FillColor = bg;
+            btn.ForeColor = textC;
+            btn.Font = new Font("Segoe UI Semibold", 9F);
+        }
+
+        private void ConfigureGunaCombo(Guna2ComboBox cmb, Color bg, Color text)
+        {
+            if (cmb == null) return;
+            cmb.FillColor = bg;
+            cmb.ForeColor = text;
+            cmb.BorderRadius = 8;
+        }
+
+        #endregion
+
         private void SetupEventHandlers()
         {
-            // Canvas
-            picCanvas.Paint += PanelCanvas_Paint;
-            picCanvas.MouseClick += picCanvas_MouseClick;
-            picCanvas.Resize += (s, e) => picCanvas.Invalidate();
+            // BOTÓN DE ÓRBITA
+            btnOrbit.Click += (s, e) => {
+                isLightOrbiting = !isLightOrbiting;
+                if (isLightOrbiting) orbitTimer.Start();
+                else orbitTimer.Stop();
+                btnOrbit.FillColor = isLightOrbiting ? Color.FromArgb(255, 193, 7) : accentColor;
+                btnOrbit.ForeColor = isLightOrbiting ? Color.Black : Color.White;
+            };
 
-            // Sidebar Inputs
-            cmbFigures.SelectedIndexChanged += CmbFigures_SelectedIndexChanged;
-            cmbMode.SelectedIndexChanged += CmbMode_SelectedIndexChanged;
-            
-            // Prevenir que las teclas de flecha naveguen por los controles del sidebar
-            SetupArrowKeysSuppression();
-            
-            // Buttons
+            // DIBUJADO
+            picCanvas.Paint += (s, e) => {
+                bool isInEditMode = rbtnVertex.Checked || rbtnEdge.Checked || rbtnFace.Checked;
+                renderer.Draw(e.Graphics, sceneManager.Shapes, picCanvas.Size, sceneManager, isInEditMode, currentPaintColor, light);
+            };
+
+            // MOUSE MOVE (LERP / SUAVE)
+            picCanvas.MouseMove += (s, e) => {
+                if (e.Button == MouseButtons.Right)
+                {
+                    isLightOrbiting = false;
+                    orbitTimer.Stop();
+
+                    targetLightPos.X = (e.X - picCanvas.Width / 2) * 2;
+                    targetLightPos.Y = (e.Y - picCanvas.Height / 2) * 2;
+
+                    // Aplicamos suavizado (Interpolación lineal)
+                    light.Position.X += (targetLightPos.X - light.Position.X) * 0.15f;
+                    light.Position.Y += (targetLightPos.Y - light.Position.Y) * 0.15f;
+
+                    picCanvas.Invalidate();
+                }
+            };
+
+            picCanvas.MouseClick += (s, e) => {
+                if (e.Button == MouseButtons.Left)
+                {
+                    mouseClickHandler.HandleMouseClick(e.Location);
+                    picCanvas.Invalidate();
+                }
+            };
+
+            if (swTheme != null)
+                swTheme.CheckedChanged += (s, e) => { isDarkMode = swTheme.Checked; ApplyTheme(); };
+
             btnReset.Click += (s, e) => {
                 sceneManager.Camera.Reset();
                 sceneManager.Camera.SetIsometricView();
+                light.Position = new Point3D(500, -500, -500);
                 picCanvas.Invalidate();
                 inputController?.RefocusCanvas();
             };
 
             btnHelp.Click += (s, e) => { ShowHelp(); inputController?.RefocusCanvas(); };
-
             btnColor.Click += BtnSelectColor_Click;
-            
-            // Radios
-            rbtnPaint.CheckedChanged += (s, e) => {
-                btnColor.Visible = rbtnPaint.Checked;
-                picCanvas.Invalidate();
-            };
-            
-            // Manejar F6 a nivel de formulario
+
+            cmbFigures.SelectedIndexChanged += CmbFigures_SelectedIndexChanged;
+            cmbMode.SelectedIndexChanged += CmbMode_SelectedIndexChanged;
+
+            SetupArrowKeysSuppression();
             this.KeyDown += ShapeExplorerForm_KeyDown;
-        }
-
-        /// <summary>
-        /// Configura todos los controles del sidebar para que NO capturen las teclas de flecha
-        /// Esto evita que al presionar flechas se navegue por el ComboBox o RadioButtons
-        /// </summary>
-        private void SetupArrowKeysSuppression()
-        {
-            // Lista de controles que pueden interferir con las teclas de flecha
-            var controlsToSetup = new Control[] 
-            { 
-                cmbFigures, cmbMode, 
-                rbtnVertex, rbtnEdge, rbtnFace, rbtnPaint,
-                btnReset, btnHelp, btnColor
-            };
-
-            foreach (var control in controlsToSetup)
-            {
-                if (control != null)
-                {
-                    control.PreviewKeyDown += Control_PreviewKeyDown;
-                }
-            }
-        }
-
-        /// <summary>
-        /// Marca las teclas de flecha como teclas de entrada regular para que no naveguen los controles
-        /// </summary>
-        private void Control_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-        {
-            // Marcar las teclas de flecha, F1-F6, y otras teclas especiales como "input keys"
-            // Esto evita que los controles las usen para navegación interna
-            switch (e.KeyCode)
-            {
-                case Keys.Up:
-                case Keys.Down:
-                case Keys.Left:
-                case Keys.Right:
-                case Keys.F1:
-                case Keys.F2:
-                case Keys.F3:
-                case Keys.F4:
-                case Keys.F5:
-                case Keys.F6:
-                    e.IsInputKey = true;
-                    break;
-            }
-        }
-
-        private void OnStatusChanged(string message)
-        {
-            // Optional: Update overlay temporary?
-            // For now we just log or ignore as we just want static basic info
-        }
-
-        private void PanelCanvas_Paint(object sender, PaintEventArgs e)
-        {
-            bool isInEditMode = rbtnVertex.Checked || rbtnEdge.Checked || rbtnFace.Checked;
-            renderer.Draw(e.Graphics, sceneManager.Shapes, picCanvas.Size, sceneManager, isInEditMode, currentPaintColor);
         }
 
         private void ShapeExplorerForm_Load(object sender, EventArgs e)
         {
-            cmbMode.SelectedIndex = 0; // Object Mode by default
+            cmbMode.SelectedIndex = 0;
             btnColor.Visible = false;
-            
-            // Overlay Position
             lblOverlay.Parent = picCanvas;
-            lblOverlay.Location = new Point(10, picCanvas.Height - 40);
-            lblOverlay.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            
-            // Dar foco al canvas para que las teclas funcionen inmediatamente
+            lblOverlay.Location = new Point(15, picCanvas.Height - 690);
             picCanvas.Focus();
         }
 
-        private void ShapeExplorerForm_KeyDown(object sender, KeyEventArgs e)
-        {
-            // F6 para mostrar ayuda
-            if (e.KeyCode == Keys.F6)
-            {
-                ShowHelp();
-                e.Handled = true;
-                e.SuppressKeyPress = true;
-            }
-            
-            // Suprimir las teclas de flecha para evitar que cambien el foco entre controles
-            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down || 
-                e.KeyCode == Keys.Left || e.KeyCode == Keys.Right)
-            {
-                e.Handled = true;
-                // No suprimir KeyPress aquí para que el KeyboardController las reciba
-            }
-        }
-
-        private void ShowHelp()
-        {
-            var helpForm = new HelpForm();
-            helpForm.ShowDialog(this);
-        }
-
-        private void picCanvas_MouseClick(object sender, MouseEventArgs e)
-        {
-            mouseClickHandler.HandleMouseClick(e.Location);
-            picCanvas.Invalidate();
-        }
+        #region Lógica de Figuras y Modos
 
         private void SetupComboBoxMode()
         {
             cmbMode.Items.Clear();
-            cmbMode.Items.Add(new ComboBoxItem("Object Mode", "object"));
-            cmbMode.Items.Add(new ComboBoxItem("Edit Mode", "edit"));
+            cmbMode.Items.Add(new ComboBoxItem("🧊 Modo Objeto", "object"));
+            cmbMode.Items.Add(new ComboBoxItem("🛠️ Modo Edición", "edit"));
             cmbMode.SelectedIndex = 0;
         }
 
         private void SetupComboBoxFigures()
         {
             cmbFigures.Items.Clear();
-            cmbFigures.Items.Add(new ComboBoxItem("Select Figure...", ""));
-            cmbFigures.Items.Add(new ComboBoxItem("Cube", "Cube"));
-            cmbFigures.Items.Add(new ComboBoxItem("Cylinder", "Cylinder"));
-            cmbFigures.Items.Add(new ComboBoxItem("Cone", "Cone"));
-            cmbFigures.Items.Add(new ComboBoxItem("Sphere", "Sphere"));
-            cmbFigures.Items.Add(new ComboBoxItem("Pyramid", "Pyramid"));
-            cmbFigures.Items.Add(new ComboBoxItem("Octahedron", "Octahedron"));
-            cmbFigures.Items.Add(new ComboBoxItem("Dodecagonal", "DodecagonalPrism"));
+            cmbFigures.Items.Add(new ComboBoxItem("➕ Añadir Figura...", ""));
+            string[] figuras = { "Cube", "Cylinder", "Cone", "Sphere", "Pyramid", "Octahedron" };
+            foreach (var f in figuras) cmbFigures.Items.Add(new ComboBoxItem(f, f));
             cmbFigures.SelectedIndex = 0;
         }
 
         private void CmbFigures_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbFigures.SelectedItem is ComboBoxItem selectedItem)
+            if (cmbFigures.SelectedItem is ComboBoxItem item && !string.IsNullOrEmpty(item.Value))
             {
-                string value = selectedItem.Value;
-                if (string.IsNullOrEmpty(value)) return;
-
-                lastSelected = value;
-                var shape = ShapeFactory.Create(value);
+                var shape = ShapeFactory.Create(item.Value);
                 if (shape != null)
                 {
+                    shape.EdgeColor = isDarkMode ? Color.FromArgb(200, 200, 200) : Color.Black;
                     sceneManager.AddShape(shape);
                     picCanvas.Invalidate();
-                    inputController?.RefocusCanvas();
                 }
+                inputController?.RefocusCanvas();
+                cmbFigures.SelectedIndex = 0;
             }
         }
 
         private void CmbMode_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbMode.SelectedItem is ComboBoxItem selectedItem)
+            if (cmbMode.SelectedItem is ComboBoxItem item)
             {
-                string modeValue = selectedItem.Value;
-
-                if (modeValue == "edit")
-                {
-                    pnlEditControls.Visible = true;
-                    // Default selection
-                    if (!rbtnVertex.Checked && !rbtnEdge.Checked && !rbtnFace.Checked && !rbtnPaint.Checked)
-                         rbtnVertex.Checked = true;
-                }
-                else
-                {
-                    pnlEditControls.Visible = false;
-                    rbtnVertex.Checked = false;
-                    rbtnEdge.Checked = false;
-                    rbtnFace.Checked = false;
-                    rbtnPaint.Checked = false;
-
-                    sceneManager.SelectedVertexIndex = null;
-                    sceneManager.SelectedEdge = null;
-                    sceneManager.SelectedFace = null;
-                }
+                bool isEdit = item.Value == "edit";
+                if (pnlEditControls != null) pnlEditControls.Visible = isEdit;
+                if (!isEdit) sceneManager.ClearSelection();
                 picCanvas.Invalidate();
                 inputController?.RefocusCanvas();
             }
@@ -262,22 +296,49 @@ namespace _3D_SHAPE_EXPLORER
 
         private void BtnSelectColor_Click(object sender, EventArgs e)
         {
-            var colores = new List<Color> { Color.Black, Color.White, Color.Orange, Color.Gold, Color.Green, Color.Teal,
-                                     Color.MidnightBlue, Color.DarkGray, Color.HotPink, Color.MediumPurple,
-                                     Color.Red, Color.Blue, Color.Yellow, Color.Cyan, Color.Magenta, Color.Lime };
-
+            var colores = new List<Color> { Color.Orange, Color.Crimson, Color.Teal, Color.Gold, Color.DodgerBlue, Color.LimeGreen, Color.MediumPurple, Color.White };
             var colorForm = new ColorPickerForm(colores);
-            // Position near button
-            var buttonLocation = btnColor.PointToScreen(Point.Empty);
-            colorForm.Location = new Point(buttonLocation.X - 250, buttonLocation.Y); // Left of sidebar
-
             if (colorForm.ShowDialog() == DialogResult.OK)
             {
                 currentPaintColor = colorForm.SelectedColor;
                 btnColor.FillColor = currentPaintColor;
-                btnColor.ForeColor = (currentPaintColor.R * 0.299 + currentPaintColor.G * 0.587 + currentPaintColor.B * 0.114) > 186 ? Color.Black : Color.White;
                 mouseClickHandler.UpdatePaintColor(currentPaintColor);
+                picCanvas.Invalidate();
             }
         }
+
+        #endregion
+
+        #region Atajos y Teclas
+
+        private void ShowHelp()
+        {
+            var helpForm = new HelpForm(this.isDarkMode);
+            helpForm.ShowDialog(this);
+        }
+
+        private void ShapeExplorerForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control && e.KeyCode == Keys.T)
+            {
+                if (swTheme != null) swTheme.Checked = !swTheme.Checked;
+                else { isDarkMode = !isDarkMode; ApplyTheme(); }
+                e.Handled = true;
+            }
+            if (e.KeyCode == Keys.F6) { ShowHelp(); e.Handled = true; }
+            if (e.KeyCode == Keys.O) { btnOrbit.PerformClick(); e.Handled = true; }
+        }
+
+        private void SetupArrowKeysSuppression()
+        {
+            var controls = new Control[] { cmbFigures, cmbMode, rbtnVertex, rbtnEdge, rbtnFace, rbtnPaint, btnReset, btnHelp, btnColor };
+            foreach (var c in controls)
+            {
+                if (c != null) c.PreviewKeyDown += (s, e) => {
+                    if (e.KeyCode >= Keys.Left && e.KeyCode <= Keys.Down) e.IsInputKey = true;
+                };
+            }
+        }
+        #endregion
     }
 }

@@ -14,33 +14,31 @@ namespace _3D_SHAPE_EXPLORER.Models
         public List<(int, int)> Edges { get; set; } = new List<(int, int)>();
         public List<List<int>> Faces { get; set; } = new List<List<int>>();
 
-
-        //Selected items
+        // --- PROPIEDADES DE SELECCIÓN ---
         public int? SelectedVertexIndex { get; set; }
         public int? SelectedEdgeIndex { get; set; }
         public int? SelectedFaceIndex { get; set; }
-
         public bool IsSelected { get; set; }
 
-
+        // --- TRANSFORMACIONES ---
         public float RotationX { get; set; } = 0;
         public float RotationY { get; set; } = 0;
         public float RotationZ { get; set; } = 0;
-
         public float ScaleFactor { get; set; } = 1f;
-
         public float TraslateX { get; set; } = 0;
         public float TraslateY { get; set; } = 0;
         public float TraslateZ { get; set; } = 0;
 
-        public abstract void GenerateShape();
-
-        public abstract Shape3D Clone();
-
+        // --- ESTADO VISUAL Y TEMA ---
         public List<Point3D> OriginalPoints { get; set; } = new List<Point3D>();
-
         public bool IsPainted { get; set; } = false;
         public Color PaintColor { get; set; } = Color.Gray;
+
+        // ESTA ES LA PROPIEDAD QUE FALTABA:
+        public Color EdgeColor { get; set; } = Color.Black;
+
+        public abstract void GenerateShape();
+        public abstract Shape3D Clone();
 
         protected void CopyTransformationsTo(Shape3D other)
         {
@@ -52,21 +50,19 @@ namespace _3D_SHAPE_EXPLORER.Models
             other.TraslateY = this.TraslateY;
             other.TraslateZ = this.TraslateZ;
             other.IsSelected = this.IsSelected;
+            other.EdgeColor = this.EdgeColor; // Copiar también el color del tema
         }
 
         public void ApplyTransformations()
         {
-            // 1. Restaurar los puntos originales, ya centrados en el origen
+            // 1. Restaurar los puntos originales
             Points = OriginalPoints.Select(p => new Point3D(p.X, p.Y, p.Z)).ToList();
 
-            // 2. Aplicar las transformaciones directamente
+            // 2. Aplicar las transformaciones
             Rotate(RotationX, RotationY, RotationZ);
             ApplyScale(ScaleFactor);
             Traslate(TraslateX, TraslateY, TraslateZ);
         }
-
-
-
 
         public void ApplyScale(float factor)
         {
@@ -116,13 +112,10 @@ namespace _3D_SHAPE_EXPLORER.Models
             }
         }
 
-
-
         private float DegreesToRadians(float degrees)
         {
             return (float)(System.Math.PI / 180) * degrees;
         }
-
 
         public Point3D TransformPoint(Point3D p)
         {
@@ -176,9 +169,7 @@ namespace _3D_SHAPE_EXPLORER.Models
             var c = projected[face[2]];
 
             float cross = (b.X - a.X) * (c.Y - a.Y) - (b.Y - a.Y) * (c.X - a.X);
-            return cross < 0; 
+            return cross < 0;
         }
-
-
     }
 }

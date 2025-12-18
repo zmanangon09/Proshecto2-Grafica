@@ -62,6 +62,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Models\Cone.cs" />
+    <Compile Include="Models\LightSource.cs" />
     <Compile Include="Models\Sphere.cs" />
     <Compile Include="Services\CameraController.cs" />
     <Compile Include="Services\MouseClickHandler.cs" />
@@ -98,6 +99,9 @@
     <Compile Include="Utils\TooltipManager.cs" />
     <EmbeddedResource Include="Forms\ColorPickerForm.resx">
       <DependentUpon>ColorPickerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ShapeExplorerForm.resx">
       <DependentUpon>ShapeExplorerForm.cs</DependentUpon>
