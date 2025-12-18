@@ -32,7 +32,6 @@ namespace _3D_SHAPE_EXPLORER
             // para evitar NullReferenceException cuando los eventos SelectedIndexChanged se disparen
             inputController = new KeyboardController(this, picCanvas, sceneManager);
             inputController.OnStatusChanged += OnStatusChanged;
-            inputController.OnF6Pressed += ShowHelp;  // Conectar F6 al KeyboardController
             
             // Mouse Handler now uses new controls
             mouseClickHandler = new MouseClickHandler(sceneManager, picCanvas,
@@ -44,10 +43,6 @@ namespace _3D_SHAPE_EXPLORER
             // AHORA configurar los ComboBox (después de que inputController esté inicializado)
             SetupComboBoxFigures();
             SetupComboBoxMode();
-            
-            // Configurar el formulario para capturar teclas correctamente
-            this.KeyPreview = true;
-            this.Load += ShapeExplorerForm_Load;
         }
 
         private void SetupEventHandlers()
@@ -57,12 +52,9 @@ namespace _3D_SHAPE_EXPLORER
             picCanvas.MouseClick += picCanvas_MouseClick;
             picCanvas.Resize += (s, e) => picCanvas.Invalidate();
 
-            // Sidebar Inputs
+            // Siderbar Inputs
             cmbFigures.SelectedIndexChanged += CmbFigures_SelectedIndexChanged;
             cmbMode.SelectedIndexChanged += CmbMode_SelectedIndexChanged;
-            
-            // Prevenir que las teclas de flecha naveguen por los controles del sidebar
-            SetupArrowKeysSuppression();
             
             // Buttons
             btnReset.Click += (s, e) => {
@@ -81,56 +73,6 @@ namespace _3D_SHAPE_EXPLORER
                 btnColor.Visible = rbtnPaint.Checked;
                 picCanvas.Invalidate();
             };
-            
-            // Manejar F6 a nivel de formulario
-            this.KeyDown += ShapeExplorerForm_KeyDown;
-        }
-
-        /// <summary>
-        /// Configura todos los controles del sidebar para que NO capturen las teclas de flecha
-        /// Esto evita que al presionar flechas se navegue por el ComboBox o RadioButtons
-        /// </summary>
-        private void SetupArrowKeysSuppression()
-        {
-            // Lista de controles que pueden interferir con las teclas de flecha
-            var controlsToSetup = new Control[] 
-            { 
-                cmbFigures, cmbMode, 
-                rbtnVertex, rbtnEdge, rbtnFace, rbtnPaint,
-                btnReset, btnHelp, btnColor
-            };
-
-            foreach (var control in controlsToSetup)
-            {
-                if (control != null)
-                {
-                    control.PreviewKeyDown += Control_PreviewKeyDown;
-                }
-            }
-        }
-
-        /// <summary>
-        /// Marca las teclas de flecha como teclas de entrada regular para que no naveguen los controles
-        /// </summary>
-        private void Control_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
-        {
-            // Marcar las teclas de flecha, F1-F6, y otras teclas especiales como "input keys"
-            // Esto evita que los controles las usen para navegación interna
-            switch (e.KeyCode)
-            {
-                case Keys.Up:
-                case Keys.Down:
-                case Keys.Left:
-                case Keys.Right:
-                case Keys.F1:
-                case Keys.F2:
-                case Keys.F3:
-                case Keys.F4:
-                case Keys.F5:
-                case Keys.F6:
-                    e.IsInputKey = true;
-                    break;
-            }
         }
 
         private void OnStatusChanged(string message)
@@ -154,28 +96,15 @@ namespace _3D_SHAPE_EXPLORER
             lblOverlay.Parent = picCanvas;
             lblOverlay.Location = new Point(10, picCanvas.Height - 40);
             lblOverlay.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
-            
-            // Dar foco al canvas para que las teclas funcionen inmediatamente
-            picCanvas.Focus();
+
+            // Handle F6
+            this.KeyPreview = true;
+            this.KeyDown += ShapeExplorerForm_KeyDown;
         }
 
         private void ShapeExplorerForm_KeyDown(object sender, KeyEventArgs e)
         {
-            // F6 para mostrar ayuda
-            if (e.KeyCode == Keys.F6)
-            {
-                ShowHelp();
-                e.Handled = true;
-                e.SuppressKeyPress = true;
-            }
-            
-            // Suprimir las teclas de flecha para evitar que cambien el foco entre controles
-            if (e.KeyCode == Keys.Up || e.KeyCode == Keys.Down || 
-                e.KeyCode == Keys.Left || e.KeyCode == Keys.Right)
-            {
-                e.Handled = true;
-                // No suprimir KeyPress aquí para que el KeyboardController las reciba
-            }
+            if (e.KeyCode == Keys.F6) ShowHelp();
         }
 
         private void ShowHelp()

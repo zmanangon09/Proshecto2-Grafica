@@ -32,7 +32,6 @@ namespace _3D_SHAPE_EXPLORER
             // para evitar NullReferenceException cuando los eventos SelectedIndexChanged se disparen
             inputController = new KeyboardController(this, picCanvas, sceneManager);
             inputController.OnStatusChanged += OnStatusChanged;
-            inputController.OnF6Pressed += ShowHelp;  // Conectar F6 al KeyboardController
             
             // Mouse Handler now uses new controls
             mouseClickHandler = new MouseClickHandler(sceneManager, picCanvas,

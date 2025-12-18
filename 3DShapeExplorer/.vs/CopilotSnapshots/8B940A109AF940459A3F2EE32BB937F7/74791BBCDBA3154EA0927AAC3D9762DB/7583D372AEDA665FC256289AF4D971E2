@@ -18,7 +18,6 @@ namespace _3D_SHAPE_EXPLORER.Services
         private const float TranslationStep = 2f;
 
         public event Action<string> OnStatusChanged;
-        public event Action OnF6Pressed;
 
         public KeyboardController(Form form, Control canvas, SceneManager manager)
         {
@@ -26,22 +25,13 @@ namespace _3D_SHAPE_EXPLORER.Services
             targetCanvas = canvas;
             parentForm = form;
 
-            // Ensure form captures keys before child controls
+            // Ensure form captures keys
             form.KeyPreview = true;
 
             form.KeyDown += (s, e) =>
             {
-                // Agregar tecla al conjunto para procesamiento continuo
                 if (!keys.Contains(e.KeyCode)) keys.Add(e.KeyCode);
-                
-                // Manejar teclas especiales
                 HandleSpecialKeys(e);
-                
-                // Suprimir teclas de navegación para evitar que cambien el foco
-                if (IsNavigationKey(e.KeyCode))
-                {
-                    e.Handled = true;
-                }
             };
 
             form.KeyDown += HandleDeleteKey;
@@ -57,68 +47,24 @@ namespace _3D_SHAPE_EXPLORER.Services
             timer.Start();
         }
 
-        /// <summary>
-        /// Verifica si una tecla es una tecla de navegación que podría mover el foco
-        /// </summary>
-        private bool IsNavigationKey(Keys key)
-        {
-            return key == Keys.Up || key == Keys.Down || 
-                   key == Keys.Left || key == Keys.Right;
-        }
-
         public void RefocusCanvas()
         {
-            // Primero el formulario, luego el canvas
-            parentForm.Focus();
             targetCanvas.Focus();
+            parentForm.Focus();
         }
 
         private void HandleSpecialKeys(KeyEventArgs e)
         {
             switch (e.KeyCode)
             {
-                case Keys.F1: 
-                    sceneManager.Camera.SetFrontView(); 
-                    OnStatusChanged?.Invoke("View: Front"); 
-                    e.Handled = true;
-                    break;
-                case Keys.F2: 
-                    sceneManager.Camera.SetTopView(); 
-                    OnStatusChanged?.Invoke("View: Top"); 
-                    e.Handled = true;
-                    break;
-                case Keys.F3: 
-                    sceneManager.Camera.SetRightView(); 
-                    OnStatusChanged?.Invoke("View: Right"); 
-                    e.Handled = true;
-                    break;
-                case Keys.F4: 
-                    sceneManager.Camera.SetLeftView(); 
-                    OnStatusChanged?.Invoke("View: Left"); 
-                    e.Handled = true;
-                    break;
-                case Keys.F5: 
-                    sceneManager.Camera.SetIsometricView(); 
-                    OnStatusChanged?.Invoke("View: Perspective"); 
-                    e.Handled = true;
-                    break;
-                case Keys.F6:
-                    OnF6Pressed?.Invoke();
-                    e.Handled = true;
-                    e.SuppressKeyPress = true;
-                    break;
-                case Keys.Home: 
-                    sceneManager.Camera.Reset(); 
-                    OnStatusChanged?.Invoke("Camera Reset"); 
-                    e.Handled = true;
-                    break;
+                case Keys.F1: sceneManager.Camera.SetFrontView(); OnStatusChanged?.Invoke("View: Front"); break;
+                case Keys.F2: sceneManager.Camera.SetTopView(); OnStatusChanged?.Invoke("View: Top"); break;
+                case Keys.F3: sceneManager.Camera.SetRightView(); OnStatusChanged?.Invoke("View: Right"); break;
+                case Keys.F4: sceneManager.Camera.SetLeftView(); OnStatusChanged?.Invoke("View: Left"); break;
+                case Keys.F5: sceneManager.Camera.SetIsometricView(); OnStatusChanged?.Invoke("View: Perspective"); break;
+                case Keys.Home: sceneManager.Camera.Reset(); OnStatusChanged?.Invoke("Camera Reset"); break;
             }
-            
-            // Redibujar para las teclas de función
-            if (e.KeyCode >= Keys.F1 && e.KeyCode <= Keys.F5 || e.KeyCode == Keys.Home)
-            {
-                targetCanvas.Invalidate();
-            }
+            if (e.KeyCode >= Keys.F1 && e.KeyCode <= Keys.Home) targetCanvas.Invalidate();
         }
 
         private void UpdateTransformations()
@@ -149,8 +95,8 @@ namespace _3D_SHAPE_EXPLORER.Services
                 }
                 else if (sceneManager.SelectedEdge != null)
                 {
-                    ApplyTransformationToPoint(selectedShape.OriginalPoints[sceneManager.SelectedEdge.Item1]);
-                    ApplyTransformationToPoint(selectedShape.OriginalPoints[sceneManager.SelectedEdge.Item2]);
+                    ApplyTransformationToPoint(selectedShape.OriginalPoints[sceneManager.SelectedEdge.Value.Item1]);
+                    ApplyTransformationToPoint(selectedShape.OriginalPoints[sceneManager.SelectedEdge.Value.Item2]);
                     subObjectTransformed = true;
                 }
                 else if (sceneManager.SelectedFace != null)

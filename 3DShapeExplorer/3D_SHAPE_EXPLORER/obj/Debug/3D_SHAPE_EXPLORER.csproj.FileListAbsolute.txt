@@ -17,7 +17,6 @@ C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-G
 C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-Grafica\3DShapeExplorer\3D_SHAPE_EXPLORER\bin\Debug\3D_SHAPE_EXPLORER.pdb
 C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-Grafica\3DShapeExplorer\3D_SHAPE_EXPLORER\bin\Debug\Guna.UI2.dll
 C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-Grafica\3DShapeExplorer\3D_SHAPE_EXPLORER\obj\Debug\3D_SHAPE_EXPLORER.csproj.AssemblyReference.cache
-C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-Grafica\3DShapeExplorer\3D_SHAPE_EXPLORER\obj\Debug\3D_SHAPE_EXPLORER.exe.config
 C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-Grafica\3DShapeExplorer\3D_SHAPE_EXPLORER\obj\Debug\_3D_SHAPE_EXPLORER.ColorPickerForm.resources
 C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-Grafica\3DShapeExplorer\3D_SHAPE_EXPLORER\obj\Debug\_3D_SHAPE_EXPLORER.ShapeExplorerForm.resources
 C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-Grafica\3DShapeExplorer\3D_SHAPE_EXPLORER\obj\Debug\_3D_SHAPE_EXPLORER.Properties.Resources.resources
@@ -27,3 +26,4 @@ C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-G
 C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-Grafica\3DShapeExplorer\3D_SHAPE_EXPLORER\obj\Debug\3D_SHAPE.EB664615.Up2Date
 C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-Grafica\3DShapeExplorer\3D_SHAPE_EXPLORER\obj\Debug\3D_SHAPE_EXPLORER.exe
 C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-Grafica\3DShapeExplorer\3D_SHAPE_EXPLORER\obj\Debug\3D_SHAPE_EXPLORER.pdb
+C:\Users\alejo\Documentos\6to Semestre\grafica\P2\PROSHECTO\newrepo\Proshecto2-Grafica\3DShapeExplorer\3D_SHAPE_EXPLORER\obj\Debug\3D_SHAPE_EXPLORER.exe.config

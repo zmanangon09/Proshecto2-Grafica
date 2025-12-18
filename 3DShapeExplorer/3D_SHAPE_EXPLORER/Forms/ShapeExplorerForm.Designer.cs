@@ -3,14 +3,14 @@
     partial class ShapeExplorerForm
     {
         /// <summary>
-        /// Variable del diseñador necesaria.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Limpiar los recursos que se estén usando.
+        /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,224 +20,297 @@
             base.Dispose(disposing);
         }
 
-        #region Código generado por el Diseñador de Windows Forms
+        #region Windows Form Designer generated code
 
         /// <summary>
-        /// Método necesario para admitir el Diseñador. No se puede modificar
-        /// el contenido de este método con el editor de código.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
+            this.imgLogo = new System.Windows.Forms.PictureBox();
+            this.panelSidebar = new System.Windows.Forms.Panel();
+            this.btnHelp = new Guna.UI2.WinForms.Guna2Button();
+            this.btnReset = new Guna.UI2.WinForms.Guna2Button();
+            this.paneSeparator2 = new System.Windows.Forms.Panel();
+            this.pnlEditControls = new System.Windows.Forms.Panel();
+            this.rbtnVertex = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rbtnEdge = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rbtnFace = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.rbtnPaint = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.btnColor = new Guna.UI2.WinForms.Guna2Button();
+            this.cmbMode = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblMode = new System.Windows.Forms.Label();
+            this.paneSeparator1 = new System.Windows.Forms.Panel();
+            this.cmbFigures = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblFigures = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.picCanvas = new System.Windows.Forms.PictureBox();
-            this.gunacmbFigures = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gunacmbMode = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.gunarbtnVertexes = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.gunarbtnEdges = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.gunarbtnFaces = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.gunarbtnPaintFigures = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.gunbtnSelectColor = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblOverlay = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).BeginInit();
+            this.panelSidebar.SuspendLayout();
+            this.pnlEditControls.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).BeginInit();
             this.SuspendLayout();
             // 
+            // imgLogo
+            // 
+            this.imgLogo.Location = new System.Drawing.Point(0, 0);
+            this.imgLogo.Name = "imgLogo";
+            this.imgLogo.Size = new System.Drawing.Size(100, 50);
+            this.imgLogo.TabIndex = 0;
+            this.imgLogo.TabStop = false;
+            // 
+            // panelSidebar
+            // 
+            this.panelSidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.panelSidebar.Controls.Add(this.btnHelp);
+            this.panelSidebar.Controls.Add(this.btnReset);
+            this.panelSidebar.Controls.Add(this.paneSeparator2);
+            this.panelSidebar.Controls.Add(this.pnlEditControls);
+            this.panelSidebar.Controls.Add(this.cmbMode);
+            this.panelSidebar.Controls.Add(this.lblMode);
+            this.panelSidebar.Controls.Add(this.paneSeparator1);
+            this.panelSidebar.Controls.Add(this.cmbFigures);
+            this.panelSidebar.Controls.Add(this.lblFigures);
+            this.panelSidebar.Controls.Add(this.lblTitle);
+            this.panelSidebar.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelSidebar.Location = new System.Drawing.Point(1220, 0);
+            this.panelSidebar.Name = "panelSidebar";
+            this.panelSidebar.Size = new System.Drawing.Size(280, 850);
+            this.panelSidebar.TabIndex = 1;
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHelp.BorderRadius = 4;
+            this.btnHelp.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.btnHelp.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnHelp.ForeColor = System.Drawing.Color.White;
+            this.btnHelp.Location = new System.Drawing.Point(20, 1550);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(240, 40);
+            this.btnHelp.TabIndex = 0;
+            this.btnHelp.Text = "Help (F6)";
+            // 
+            // btnReset
+            // 
+            this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReset.BorderRadius = 4;
+            this.btnReset.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(65)))));
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.Location = new System.Drawing.Point(20, 1500);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(240, 40);
+            this.btnReset.TabIndex = 1;
+            this.btnReset.Text = "Reset Camera";
+            // 
+            // paneSeparator2
+            // 
+            this.paneSeparator2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.paneSeparator2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.paneSeparator2.Location = new System.Drawing.Point(0, 849);
+            this.paneSeparator2.Name = "paneSeparator2";
+            this.paneSeparator2.Size = new System.Drawing.Size(280, 1);
+            this.paneSeparator2.TabIndex = 2;
+            // 
+            // pnlEditControls
+            // 
+            this.pnlEditControls.Controls.Add(this.rbtnVertex);
+            this.pnlEditControls.Controls.Add(this.rbtnEdge);
+            this.pnlEditControls.Controls.Add(this.rbtnFace);
+            this.pnlEditControls.Controls.Add(this.rbtnPaint);
+            this.pnlEditControls.Controls.Add(this.btnColor);
+            this.pnlEditControls.Location = new System.Drawing.Point(20, 250);
+            this.pnlEditControls.Name = "pnlEditControls";
+            this.pnlEditControls.Size = new System.Drawing.Size(240, 240);
+            this.pnlEditControls.TabIndex = 3;
+            // 
+            // rbtnVertex
+            // 
+            this.rbtnVertex.AutoSize = true;
+            this.rbtnVertex.CheckedState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.rbtnVertex.CheckedState.BorderThickness = 0;
+            this.rbtnVertex.CheckedState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.rbtnVertex.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.rbtnVertex.ForeColor = System.Drawing.Color.White;
+            this.rbtnVertex.Location = new System.Drawing.Point(10, 10);
+            this.rbtnVertex.Name = "rbtnVertex";
+            this.rbtnVertex.Size = new System.Drawing.Size(95, 27);
+            this.rbtnVertex.TabIndex = 0;
+            this.rbtnVertex.Text = "Vertexes";
+            this.rbtnVertex.UncheckedState.BorderThickness = 0;
+            // 
+            // rbtnEdge
+            // 
+            this.rbtnEdge.AutoSize = true;
+            this.rbtnEdge.CheckedState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.rbtnEdge.CheckedState.BorderThickness = 0;
+            this.rbtnEdge.CheckedState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.rbtnEdge.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.rbtnEdge.ForeColor = System.Drawing.Color.White;
+            this.rbtnEdge.Location = new System.Drawing.Point(10, 45);
+            this.rbtnEdge.Name = "rbtnEdge";
+            this.rbtnEdge.Size = new System.Drawing.Size(76, 27);
+            this.rbtnEdge.TabIndex = 1;
+            this.rbtnEdge.Text = "Edges";
+            this.rbtnEdge.UncheckedState.BorderThickness = 0;
+            // 
+            // rbtnFace
+            // 
+            this.rbtnFace.AutoSize = true;
+            this.rbtnFace.CheckedState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.rbtnFace.CheckedState.BorderThickness = 0;
+            this.rbtnFace.CheckedState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.rbtnFace.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.rbtnFace.ForeColor = System.Drawing.Color.White;
+            this.rbtnFace.Location = new System.Drawing.Point(10, 80);
+            this.rbtnFace.Name = "rbtnFace";
+            this.rbtnFace.Size = new System.Drawing.Size(71, 27);
+            this.rbtnFace.TabIndex = 2;
+            this.rbtnFace.Text = "Faces";
+            this.rbtnFace.UncheckedState.BorderThickness = 0;
+            // 
+            // rbtnPaint
+            // 
+            this.rbtnPaint.AutoSize = true;
+            this.rbtnPaint.CheckedState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.rbtnPaint.CheckedState.BorderThickness = 0;
+            this.rbtnPaint.CheckedState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.rbtnPaint.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.rbtnPaint.ForeColor = System.Drawing.Color.White;
+            this.rbtnPaint.Location = new System.Drawing.Point(10, 115);
+            this.rbtnPaint.Name = "rbtnPaint";
+            this.rbtnPaint.Size = new System.Drawing.Size(128, 27);
+            this.rbtnPaint.TabIndex = 3;
+            this.rbtnPaint.Text = "Paint Figures";
+            this.rbtnPaint.UncheckedState.BorderThickness = 0;
+            // 
+            // btnColor
+            // 
+            this.btnColor.BorderRadius = 4;
+            this.btnColor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(55)))));
+            this.btnColor.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnColor.ForeColor = System.Drawing.Color.White;
+            this.btnColor.Location = new System.Drawing.Point(10, 150);
+            this.btnColor.Name = "btnColor";
+            this.btnColor.Size = new System.Drawing.Size(200, 35);
+            this.btnColor.TabIndex = 4;
+            this.btnColor.Text = "Select Color";
+            // 
+            // cmbMode
+            // 
+            this.cmbMode.BackColor = System.Drawing.Color.Transparent;
+            this.cmbMode.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.cmbMode.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbMode.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.cmbMode.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbMode.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbMode.ForeColor = System.Drawing.Color.White;
+            this.cmbMode.ItemHeight = 30;
+            this.cmbMode.Location = new System.Drawing.Point(20, 195);
+            this.cmbMode.Name = "cmbMode";
+            this.cmbMode.Size = new System.Drawing.Size(240, 36);
+            this.cmbMode.TabIndex = 4;
+            // 
+            // lblMode
+            // 
+            this.lblMode.AutoSize = true;
+            this.lblMode.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblMode.ForeColor = System.Drawing.Color.Gray;
+            this.lblMode.Location = new System.Drawing.Point(20, 170);
+            this.lblMode.Name = "lblMode";
+            this.lblMode.Size = new System.Drawing.Size(53, 20);
+            this.lblMode.TabIndex = 5;
+            this.lblMode.Text = "MODE";
+            // 
+            // paneSeparator1
+            // 
+            this.paneSeparator1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.paneSeparator1.Location = new System.Drawing.Point(20, 150);
+            this.paneSeparator1.Name = "paneSeparator1";
+            this.paneSeparator1.Size = new System.Drawing.Size(240, 1);
+            this.paneSeparator1.TabIndex = 6;
+            // 
+            // cmbFigures
+            // 
+            this.cmbFigures.BackColor = System.Drawing.Color.Transparent;
+            this.cmbFigures.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.cmbFigures.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbFigures.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbFigures.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.cmbFigures.FocusedColor = System.Drawing.Color.Empty;
+            this.cmbFigures.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbFigures.ForeColor = System.Drawing.Color.White;
+            this.cmbFigures.ItemHeight = 30;
+            this.cmbFigures.Location = new System.Drawing.Point(20, 95);
+            this.cmbFigures.Name = "cmbFigures";
+            this.cmbFigures.Size = new System.Drawing.Size(240, 36);
+            this.cmbFigures.TabIndex = 7;
+            // 
+            // lblFigures
+            // 
+            this.lblFigures.AutoSize = true;
+            this.lblFigures.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.lblFigures.ForeColor = System.Drawing.Color.Gray;
+            this.lblFigures.Location = new System.Drawing.Point(20, 70);
+            this.lblFigures.Name = "lblFigures";
+            this.lblFigures.Size = new System.Drawing.Size(70, 20);
+            this.lblFigures.TabIndex = 8;
+            this.lblFigures.Text = "FIGURES";
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblTitle.ForeColor = System.Drawing.Color.White;
+            this.lblTitle.Location = new System.Drawing.Point(0, 0);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(280, 60);
+            this.lblTitle.TabIndex = 9;
+            this.lblTitle.Text = "SHAPE EXPLORER";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // picCanvas
             // 
-            this.picCanvas.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.picCanvas.Location = new System.Drawing.Point(-5, 47);
+            this.picCanvas.BackColor = System.Drawing.Color.LavenderBlush;
+            this.picCanvas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.picCanvas.Location = new System.Drawing.Point(0, 0);
             this.picCanvas.Name = "picCanvas";
-            this.picCanvas.Size = new System.Drawing.Size(1517, 798);
+            this.picCanvas.Size = new System.Drawing.Size(1220, 850);
             this.picCanvas.TabIndex = 0;
             this.picCanvas.TabStop = false;
-            this.picCanvas.Click += new System.EventHandler(this.picCanvas_Click);
-            this.picCanvas.MouseClick += new System.Windows.Forms.MouseEventHandler(this.picCanvas_MouseClick);
             // 
-            // gunacmbFigures
+            // lblOverlay
             // 
-            this.gunacmbFigures.BackColor = System.Drawing.Color.Transparent;
-            this.gunacmbFigures.BorderColor = System.Drawing.Color.Transparent;
-            this.gunacmbFigures.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunacmbFigures.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunacmbFigures.FillColor = System.Drawing.Color.Transparent;
-            this.gunacmbFigures.FocusedColor = System.Drawing.Color.White;
-            this.gunacmbFigures.FocusedState.BorderColor = System.Drawing.Color.White;
-            this.gunacmbFigures.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunacmbFigures.ForeColor = System.Drawing.Color.White;
-            this.gunacmbFigures.ItemHeight = 30;
-            this.gunacmbFigures.ItemsAppearance.BackColor = System.Drawing.Color.Black;
-            this.gunacmbFigures.ItemsAppearance.ForeColor = System.Drawing.Color.White;
-            this.gunacmbFigures.ItemsAppearance.SelectedBackColor = System.Drawing.Color.DimGray;
-            this.gunacmbFigures.Location = new System.Drawing.Point(12, 5);
-            this.gunacmbFigures.Name = "gunacmbFigures";
-            this.gunacmbFigures.Size = new System.Drawing.Size(256, 36);
-            this.gunacmbFigures.TabIndex = 12;
-            this.gunacmbFigures.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
-            // 
-            // gunacmbMode
-            // 
-            this.gunacmbMode.BackColor = System.Drawing.Color.Transparent;
-            this.gunacmbMode.BorderColor = System.Drawing.Color.Transparent;
-            this.gunacmbMode.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunacmbMode.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunacmbMode.FillColor = System.Drawing.Color.Transparent;
-            this.gunacmbMode.FocusedColor = System.Drawing.Color.White;
-            this.gunacmbMode.FocusedState.BorderColor = System.Drawing.Color.White;
-            this.gunacmbMode.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunacmbMode.ForeColor = System.Drawing.Color.White;
-            this.gunacmbMode.ItemHeight = 30;
-            this.gunacmbMode.ItemsAppearance.BackColor = System.Drawing.Color.Black;
-            this.gunacmbMode.ItemsAppearance.ForeColor = System.Drawing.Color.White;
-            this.gunacmbMode.ItemsAppearance.SelectedBackColor = System.Drawing.Color.DimGray;
-            this.gunacmbMode.Location = new System.Drawing.Point(274, 5);
-            this.gunacmbMode.Name = "gunacmbMode";
-            this.gunacmbMode.Size = new System.Drawing.Size(258, 36);
-            this.gunacmbMode.TabIndex = 13;
-            this.gunacmbMode.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox2_SelectedIndexChanged);
-            // 
-            // gunarbtnVertexes
-            // 
-            this.gunarbtnVertexes.AutoSize = true;
-            this.gunarbtnVertexes.CheckedState.BorderColor = System.Drawing.Color.White;
-            this.gunarbtnVertexes.CheckedState.BorderThickness = 0;
-            this.gunarbtnVertexes.CheckedState.FillColor = System.Drawing.Color.DimGray;
-            this.gunarbtnVertexes.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.gunarbtnVertexes.CheckedState.InnerOffset = -4;
-            this.gunarbtnVertexes.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunarbtnVertexes.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gunarbtnVertexes.Location = new System.Drawing.Point(655, 12);
-            this.gunarbtnVertexes.Name = "gunarbtnVertexes";
-            this.gunarbtnVertexes.Size = new System.Drawing.Size(134, 26);
-            this.gunarbtnVertexes.TabIndex = 14;
-            this.gunarbtnVertexes.Text = "🟢 Vertexes";
-            this.gunarbtnVertexes.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunarbtnVertexes.UncheckedState.BorderThickness = 2;
-            this.gunarbtnVertexes.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.gunarbtnVertexes.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // gunarbtnEdges
-            // 
-            this.gunarbtnEdges.AutoSize = true;
-            this.gunarbtnEdges.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunarbtnEdges.CheckedState.BorderThickness = 0;
-            this.gunarbtnEdges.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunarbtnEdges.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.gunarbtnEdges.CheckedState.InnerOffset = -4;
-            this.gunarbtnEdges.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunarbtnEdges.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gunarbtnEdges.Location = new System.Drawing.Point(809, 12);
-            this.gunarbtnEdges.Name = "gunarbtnEdges";
-            this.gunarbtnEdges.Size = new System.Drawing.Size(105, 26);
-            this.gunarbtnEdges.TabIndex = 15;
-            this.gunarbtnEdges.Text = "📏Edges";
-            this.gunarbtnEdges.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunarbtnEdges.UncheckedState.BorderThickness = 2;
-            this.gunarbtnEdges.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.gunarbtnEdges.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // gunarbtnFaces
-            // 
-            this.gunarbtnFaces.AutoSize = true;
-            this.gunarbtnFaces.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunarbtnFaces.CheckedState.BorderThickness = 0;
-            this.gunarbtnFaces.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunarbtnFaces.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.gunarbtnFaces.CheckedState.InnerOffset = -4;
-            this.gunarbtnFaces.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunarbtnFaces.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gunarbtnFaces.Location = new System.Drawing.Point(931, 12);
-            this.gunarbtnFaces.Name = "gunarbtnFaces";
-            this.gunarbtnFaces.Size = new System.Drawing.Size(101, 26);
-            this.gunarbtnFaces.TabIndex = 16;
-            this.gunarbtnFaces.Text = "🧊Faces";
-            this.gunarbtnFaces.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunarbtnFaces.UncheckedState.BorderThickness = 2;
-            this.gunarbtnFaces.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.gunarbtnFaces.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            // 
-            // gunarbtnPaintFigures
-            // 
-            this.gunarbtnPaintFigures.AutoSize = true;
-            this.gunarbtnPaintFigures.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunarbtnPaintFigures.CheckedState.BorderThickness = 0;
-            this.gunarbtnPaintFigures.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.gunarbtnPaintFigures.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.gunarbtnPaintFigures.CheckedState.InnerOffset = -4;
-            this.gunarbtnPaintFigures.Font = new System.Drawing.Font("Segoe UI Emoji", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunarbtnPaintFigures.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.gunarbtnPaintFigures.Location = new System.Drawing.Point(1049, 12);
-            this.gunarbtnPaintFigures.Name = "gunarbtnPaintFigures";
-            this.gunarbtnPaintFigures.Size = new System.Drawing.Size(166, 26);
-            this.gunarbtnPaintFigures.TabIndex = 17;
-            this.gunarbtnPaintFigures.Text = "🎨Paint Figures";
-            this.gunarbtnPaintFigures.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.gunarbtnPaintFigures.UncheckedState.BorderThickness = 2;
-            this.gunarbtnPaintFigures.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.gunarbtnPaintFigures.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.gunarbtnPaintFigures.CheckedChanged += new System.EventHandler(this.gunarbtnPaintFigures_CheckedChanged);
-            // 
-            // gunbtnSelectColor
-            // 
-            this.gunbtnSelectColor.BorderColor = System.Drawing.Color.Transparent;
-            this.gunbtnSelectColor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.gunbtnSelectColor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.gunbtnSelectColor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.gunbtnSelectColor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.gunbtnSelectColor.FillColor = System.Drawing.Color.Transparent;
-            this.gunbtnSelectColor.FocusedColor = System.Drawing.Color.White;
-            this.gunbtnSelectColor.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.gunbtnSelectColor.ForeColor = System.Drawing.Color.White;
-            this.gunbtnSelectColor.HoverState.BorderColor = System.Drawing.Color.White;
-            this.gunbtnSelectColor.HoverState.CustomBorderColor = System.Drawing.Color.White;
-            this.gunbtnSelectColor.HoverState.FillColor = System.Drawing.Color.Transparent;
-            this.gunbtnSelectColor.IndicateFocus = true;
-            this.gunbtnSelectColor.Location = new System.Drawing.Point(1294, 9);
-            this.gunbtnSelectColor.Name = "gunbtnSelectColor";
-            this.gunbtnSelectColor.Size = new System.Drawing.Size(195, 32);
-            this.gunbtnSelectColor.TabIndex = 18;
-            this.gunbtnSelectColor.Text = "🌈Select Color";
-            this.gunbtnSelectColor.Click += new System.EventHandler(this.gunbtnSelectColor_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(586, -5);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 46);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "|";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Emoji", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1259, -2);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(29, 46);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "|";
+            this.lblOverlay.AutoSize = true;
+            this.lblOverlay.BackColor = System.Drawing.Color.Transparent;
+            this.lblOverlay.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.lblOverlay.ForeColor = System.Drawing.Color.Black;
+            this.lblOverlay.Location = new System.Drawing.Point(44, 22);
+            this.lblOverlay.Name = "lblOverlay";
+            this.lblOverlay.Size = new System.Drawing.Size(437, 23);
+            this.lblOverlay.TabIndex = 0;
+            this.lblOverlay.Text = "ARROWS: Rotate | +/-: Zoom | DEL: Delete | F6: Controls";
             // 
             // ShapeExplorerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(1501, 846);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.gunbtnSelectColor);
-            this.Controls.Add(this.gunarbtnPaintFigures);
-            this.Controls.Add(this.gunarbtnFaces);
-            this.Controls.Add(this.gunarbtnEdges);
-            this.Controls.Add(this.gunarbtnVertexes);
-            this.Controls.Add(this.gunacmbMode);
-            this.Controls.Add(this.gunacmbFigures);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
+            this.ClientSize = new System.Drawing.Size(1500, 850);
+            this.Controls.Add(this.lblOverlay);
             this.Controls.Add(this.picCanvas);
+            this.Controls.Add(this.panelSidebar);
             this.Name = "ShapeExplorerForm";
-            this.Text = "3D_SHAPE_EXPLORER";
-            this.Load += new System.EventHandler(this.ShapeExplorerForm_Load);
+            this.Text = "3D Shape Explorer";
+            ((System.ComponentModel.ISupportInitialize)(this.imgLogo)).EndInit();
+            this.panelSidebar.ResumeLayout(false);
+            this.panelSidebar.PerformLayout();
+            this.pnlEditControls.ResumeLayout(false);
+            this.pnlEditControls.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCanvas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -246,16 +319,31 @@
 
         #endregion
 
+        // Existing and new controls
+        private System.Windows.Forms.PictureBox imgLogo;
+        private System.Windows.Forms.Panel panelSidebar;
+        private System.Windows.Forms.Label lblTitle;
+        
+        private System.Windows.Forms.Label lblFigures;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbFigures;
+        
+        private System.Windows.Forms.Panel paneSeparator1;
+     
+        private System.Windows.Forms.Label lblMode;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbMode;
+        
+        private System.Windows.Forms.Panel pnlEditControls;
+        private Guna.UI2.WinForms.Guna2RadioButton rbtnVertex;
+        private Guna.UI2.WinForms.Guna2RadioButton rbtnEdge;
+        private Guna.UI2.WinForms.Guna2RadioButton rbtnFace;
+        private Guna.UI2.WinForms.Guna2RadioButton rbtnPaint;
+        private Guna.UI2.WinForms.Guna2Button btnColor;
+
+        private System.Windows.Forms.Panel paneSeparator2;
+        private Guna.UI2.WinForms.Guna2Button btnReset;
+        private Guna.UI2.WinForms.Guna2Button btnHelp;
+
         private System.Windows.Forms.PictureBox picCanvas;
-        private Guna.UI2.WinForms.Guna2ComboBox gunacmbFigures;
-        private Guna.UI2.WinForms.Guna2ComboBox gunacmbMode;
-        private Guna.UI2.WinForms.Guna2RadioButton gunarbtnVertexes;
-        private Guna.UI2.WinForms.Guna2RadioButton gunarbtnEdges;
-        private Guna.UI2.WinForms.Guna2RadioButton gunarbtnFaces;
-        private Guna.UI2.WinForms.Guna2RadioButton gunarbtnPaintFigures;
-        private Guna.UI2.WinForms.Guna2Button gunbtnSelectColor;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblOverlay;
     }
 }
-
