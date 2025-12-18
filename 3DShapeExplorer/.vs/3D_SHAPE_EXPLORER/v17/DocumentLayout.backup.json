@@ -1,140 +1,137 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\",
+  "WorkspaceRootPath": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\shapeexplorerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\shapeexplorerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\forms\\shapeexplorerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\shapeexplorerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\shapeexplorerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\forms\\shapeexplorerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\colorpickerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\services\\keyboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\services\\keyboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\models\\sphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\sphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|c:\\users\\alejo\\documentos\\6to semestre\\grafica\\p2\\proshecto\\newrepo\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\models\\cone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\cone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\models\\cube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\cube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\services\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\services\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\utils\\floodfilldfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\utils\\floodfilldfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\colorpickerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\forms\\colorpickerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\helpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\helpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\forms\\helpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\services\\shaperenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\services\\shaperenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\services\\shaperenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|d:\\computacion grafica\\proyecto-2\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\models\\lightsource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\models\\lightsource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\lightsource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\base\\shape3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\base\\shape3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\base\\shape3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\helpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\helpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\forms\\helpform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\services\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\services\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\services\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\splashscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\splashscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\forms\\splashscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\models\\cube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\cube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|3D_SHAPE_EXPLORER||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\utils\\tooltipmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\utils\\tooltipmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\utils\\tooltipmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|d:\\computacion grafica\\proyecto-2\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\utils\\shapefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\utils\\shapefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\utils\\shapefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\utils\\projection3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\utils\\projection3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\utils\\projection3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\utils\\floodfilldfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\utils\\floodfilldfs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\utils\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\utils\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\utils\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|d:\\computacion grafica\\proyecto-2\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\utils\\comboboxitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\utils\\comboboxitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\utils\\comboboxitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|d:\\computacion grafica\\proyecto-2\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\services\\shapepainter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\services\\shapepainter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\services\\shapepainter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\services\\mouseclickhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\services\\mouseclickhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\services\\mouseclickhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\services\\keyboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\services\\keyboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\services\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\services\\cameracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\models\\sphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\sphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|d:\\computacion grafica\\proyecto-2\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\models\\pyramid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\models\\pyramid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\pyramid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|d:\\computacion grafica\\proyecto-2\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\models\\octahedron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\models\\octahedron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\octahedron.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|d:\\computacion grafica\\proyecto-2\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\models\\dodecagonalprism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\models\\dodecagonalprism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\dodecagonalprism.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|d:\\computacion grafica\\proyecto-2\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\models\\cylinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\models\\cylinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\cylinder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\models\\cone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\cone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|d:\\computacion grafica\\proyecto-2\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\forms\\splashscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\splashscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\forms\\splashscreenform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|d:\\computacion grafica\\proyecto-2\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\forms\\colorpickerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\colorpickerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\forms\\colorpickerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\base\\point3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\base\\point3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\base\\point3d.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\shapeexplorerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\shapeexplorerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\forms\\shapeexplorerform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|d:\\computacion grafica\\proyecto-2\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\||{B270807C-D8C6-49EB-8EBE-8E8D566637A1}|5e9a8ac2-4f34-4521-858f-4c248ba31532"
     }
   ],
   "DocumentGroupContainers": [
@@ -144,11 +141,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 298,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -159,310 +160,120 @@
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ShapeExplorerForm.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAUwGEAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Cone.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cone.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\Cone.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cone.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Cone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T13:02:15.479Z",
+              "WhenOpened": "2025-12-16T13:04:19.213Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Cube.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cube.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\Cube.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cube.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Cube.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAuwDsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T14:56:56.028Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HelpForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs [Design]",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T01:11:53.494Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ShapeExplorerForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs [Design]",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T14:53:50.45Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Shape3D.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Base\\Shape3D.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Base\\Shape3D.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Base\\Shape3D.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Base\\Shape3D.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAIwK4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T15:17:06.149Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ColorPickerForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs [Design]",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T14:53:37.963Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "LightSource.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\LightSource.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\LightSource.cs",
               "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\LightSource.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\LightSource.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\LightSource.cs",
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\LightSource.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAABBwAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-18T02:51:33.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ShapeRenderer.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\ShapeRenderer.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Services\\ShapeRenderer.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\ShapeRenderer.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Services\\ShapeRenderer.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCUAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T12:57:49.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "HelpForm.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs",
-              "ViewState": "AgIAAIoAAAAAAAAAAAAYwKsAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T13:01:14.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Config.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\Config.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Utils\\Config.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\Config.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Utils\\Config.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T01:16:59.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SplashScreenForm.cs [Design]",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs [Design]",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T14:53:47.596Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SceneManager.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\SceneManager.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Services\\SceneManager.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\SceneManager.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Services\\SceneManager.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAswGQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T12:56:55.953Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Program.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Program.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Program.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T12:40:11.359Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "TooltipManager.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\TooltipManager.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Utils\\TooltipManager.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\TooltipManager.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Utils\\TooltipManager.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAAwFcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T13:00:33.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ShapeFactory.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\ShapeFactory.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Utils\\ShapeFactory.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\ShapeFactory.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Utils\\ShapeFactory.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAwFgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T13:04:38.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Projection3D.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\Projection3D.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Utils\\Projection3D.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\Projection3D.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Utils\\Projection3D.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAQwF4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T12:56:31.18Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "FloodFillDFS.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\FloodFillDFS.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\FloodFillDFS.cs",
               "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Utils\\FloodFillDFS.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\FloodFillDFS.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\FloodFillDFS.cs",
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Utils\\FloodFillDFS.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAYwD0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T15:16:58.006Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T15:16:58.006Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "3D_SHAPE_EXPLORER",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-12-18T02:18:33.156Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ComboBoxItem.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\ComboBoxItem.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Utils\\ComboBoxItem.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\ComboBoxItem.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Utils\\ComboBoxItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T02:00:17.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ShapePainter.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\ShapePainter.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Services\\ShapePainter.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\ShapePainter.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Services\\ShapePainter.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAuwCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T02:00:06.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "MouseClickHandler.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\MouseClickHandler.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Services\\MouseClickHandler.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\MouseClickHandler.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Services\\MouseClickHandler.cs",
-              "ViewState": "AgIAANYAAAAAAAAAAAAAAPQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T12:59:45.905Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 2,
               "Title": "KeyboardController.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\KeyboardController.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\KeyboardController.cs",
               "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Services\\KeyboardController.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\KeyboardController.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\KeyboardController.cs",
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Services\\KeyboardController.cs",
-              "ViewState": "AgIAAN8AAAAAAAAAAAAQwP8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAnwC4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-16T12:58:52.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 6,
               "Title": "CameraController.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\CameraController.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\CameraController.cs",
               "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Services\\CameraController.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\CameraController.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\CameraController.cs",
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Services\\CameraController.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAuwLYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T12:56:07.924Z",
+              "WhenOpened": "2025-12-16T12:56:07.924Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cube.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cube.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\Cube.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cube.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Cube.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T14:56:56.028Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShapeExplorerForm.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
+              "ViewState": "AgIAAAACAAAAAAAAAAAnwAcCAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:02:15.479Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 1,
+              "Title": "ShapeExplorerForm.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs [Dise\u00F1o]",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T14:53:50.45Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Sphere.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Sphere.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Sphere.cs",
               "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\Sphere.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Sphere.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Sphere.cs",
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Sphere.cs",
               "ViewState": "AgIAAIoAAAAAAAAAAAAQwKoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -471,115 +282,280 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Pyramid.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Pyramid.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\Pyramid.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Pyramid.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Pyramid.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAQwDsAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "ColorPickerForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs",
+              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T01:59:31.429Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T14:53:37.963Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Shape3D.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Base\\Shape3D.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Base\\Shape3D.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Base\\Shape3D.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Base\\Shape3D.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAIwK4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T15:17:06.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HelpForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs",
+              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T01:11:53.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ShapeRenderer.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\ShapeRenderer.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Services\\ShapeRenderer.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\ShapeRenderer.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Services\\ShapeRenderer.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCUAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:57:49.183Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "HelpForm.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\HelpForm.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAYwKsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:01:14.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Config.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\Config.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Utils\\Config.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\Config.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Utils\\Config.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T01:16:59.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "SplashScreenForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs",
+              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T14:53:47.596Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SceneManager.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\SceneManager.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Services\\SceneManager.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\SceneManager.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Services\\SceneManager.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAswGQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:56:55.953Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Program.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Program.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Program.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:40:11.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TooltipManager.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\TooltipManager.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Utils\\TooltipManager.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\TooltipManager.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Utils\\TooltipManager.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAAwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:00:33.415Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ShapeFactory.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\ShapeFactory.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Utils\\ShapeFactory.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\ShapeFactory.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Utils\\ShapeFactory.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:04:38.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Projection3D.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\Projection3D.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Utils\\Projection3D.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\Projection3D.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Utils\\Projection3D.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAQwF4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:56:31.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "3D_SHAPE_EXPLORER",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-18T02:18:33.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ComboBoxItem.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\ComboBoxItem.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Utils\\ComboBoxItem.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Utils\\ComboBoxItem.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Utils\\ComboBoxItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T02:00:17.189Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ShapePainter.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\ShapePainter.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Services\\ShapePainter.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\ShapePainter.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Services\\ShapePainter.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAuwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T02:00:06.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "MouseClickHandler.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\MouseClickHandler.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Services\\MouseClickHandler.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Services\\MouseClickHandler.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Services\\MouseClickHandler.cs",
+              "ViewState": "AgIAANYAAAAAAAAAAAAAAPQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T12:59:45.905Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 25,
-              "Title": "Octahedron.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Octahedron.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\Octahedron.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Octahedron.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Octahedron.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwEIAAAAAAAAAAAAAAA==",
+              "Title": "Pyramid.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Pyramid.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\Pyramid.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Pyramid.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Pyramid.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwDsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T01:59:17.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T01:59:31.429Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "DodecagonalPrism.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\DodecagonalPrism.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\DodecagonalPrism.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\DodecagonalPrism.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\DodecagonalPrism.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAAQwEsAAAAAAAAAAAAAAA==",
+              "Title": "Octahedron.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Octahedron.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\Octahedron.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Octahedron.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Octahedron.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T01:59:11.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T01:59:17.616Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
+              "Title": "DodecagonalPrism.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\DodecagonalPrism.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\DodecagonalPrism.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\DodecagonalPrism.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\DodecagonalPrism.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAQwEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T01:59:11.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "Cylinder.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cylinder.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cylinder.cs",
               "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\Cylinder.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cylinder.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cylinder.cs",
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Cylinder.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAQwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T01:59:07.563Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T01:59:07.563Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 29,
               "Title": "SplashScreenForm.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs",
               "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs",
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\SplashScreenForm.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAAwEgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T01:58:20.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Cone.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cone.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\Cone.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cone.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Cone.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAQwFMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T13:04:19.213Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T01:58:20.845Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 30,
               "Title": "ColorPickerForm.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs",
               "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs",
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\ColorPickerForm.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAQwEMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T01:57:51.356Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T01:57:51.356Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 31,
               "Title": "Point3D.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Base\\Point3D.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Base\\Point3D.cs",
               "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Base\\Point3D.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Base\\Point3D.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Base\\Point3D.cs",
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Base\\Point3D.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T15:17:04.904Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T15:17:04.904Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 32,
               "Title": "ShapeExplorerForm.Designer.cs",
-              "DocumentMoniker": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.Designer.cs",
               "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.Designer.cs",
-              "ToolTip": "D:\\Computacion Grafica\\Proyecto-2\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.Designer.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.Designer.cs",
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

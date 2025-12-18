@@ -24,12 +24,10 @@ namespace _3D_SHAPE_EXPLORER
         private bool isLightOrbiting = false;
         private float orbitRadius = 400f;
         private LightSource light = new LightSource();
-        
-        // Variables para el arrastre de luz con click derecho
-        private bool isDraggingLight = false;
-        private Point lastMousePosition;
+        private Point3D targetLightPos = new Point3D(500, -500, -500);
 
         // --- UI ADICIONAL (Agregada por Código) ---
+        private Guna2Button btnOrbit;
         private FlowLayoutPanel pnlColorPalette;
         private Label lblColorTitle;
 
@@ -77,7 +75,30 @@ namespace _3D_SHAPE_EXPLORER
 
         private void InitializeCustomComponents()
         {
-            // 1. Crear el título de la paleta de colores
+            // 1. Botón de órbita de luz
+            btnOrbit = new Guna2Button();
+            btnOrbit.Name = "btnOrbit";
+            btnOrbit.Text = "💫 Orbitar Luz";
+            btnOrbit.Size = new Size(140, 40);
+            btnOrbit.BorderRadius = 8;
+            btnOrbit.Animated = true;
+            btnOrbit.FillColor = accentColor;
+            btnOrbit.ForeColor = Color.White;
+            btnOrbit.Font = new Font("Segoe UI Semibold", 9F);
+
+            if (btnHelp != null && btnHelp.Parent != null)
+            {
+                btnHelp.Parent.Controls.Add(btnOrbit);
+                btnOrbit.Location = new Point(btnHelp.Location.X, btnHelp.Location.Y + btnHelp.Height + 10);
+            }
+            else
+            {
+                this.Controls.Add(btnOrbit);
+                btnOrbit.Location = new Point(20, 20);
+            }
+            btnOrbit.BringToFront();
+
+            // 2. Crear el título de la paleta de colores
             lblColorTitle = new Label();
             lblColorTitle.Text = "🎨 COLORES";
             lblColorTitle.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
@@ -85,7 +106,7 @@ namespace _3D_SHAPE_EXPLORER
             lblColorTitle.AutoSize = true;
             lblColorTitle.Visible = false;
 
-            // 2. Crear el panel de paleta de colores
+            // 3. Crear el panel de paleta de colores
             pnlColorPalette = new FlowLayoutPanel();
             pnlColorPalette.Name = "pnlColorPalette";
             pnlColorPalette.Size = new Size(250, 100);
@@ -196,26 +217,9 @@ namespace _3D_SHAPE_EXPLORER
                     light.Position.X = (float)(Math.Cos(lightAngle) * orbitRadius);
                     light.Position.Z = (float)(Math.Sin(lightAngle) * orbitRadius);
                     light.Position.Y = (float)(Math.Sin(lightAngle * 0.5f) * 200) - 200;
-                    picCanvas.Invalidate();
                 }
+                picCanvas.Invalidate();
             };
-        }
-        
-        /// <summary>
-        /// Alterna el modo de órbita de la luz (activado con tecla G)
-        /// </summary>
-        private void ToggleLightOrbit()
-        {
-            isLightOrbiting = !isLightOrbiting;
-            if (isLightOrbiting)
-            {
-                orbitTimer.Start();
-            }
-            else
-            {
-                orbitTimer.Stop();
-            }
-            picCanvas.Invalidate();
         }
 
         #region Sistema de Temas (Dark/Light)
@@ -237,6 +241,7 @@ namespace _3D_SHAPE_EXPLORER
 
             ConfigureGunaButton(btnReset, isDarkMode ? "🔄 Reset Vista" : "🔃 Reiniciar Vista", panelColor, textColor);
             ConfigureGunaButton(btnHelp, isDarkMode ? "❓ Ayuda (F6)" : "💡 Ayuda (F6)", panelColor, textColor);
+            ConfigureGunaButton(btnOrbit, "💫 Orbitar Luz", panelColor, textColor);
             ConfigureGunaButton(btnColor, "🎨 Color", currentPaintColor, Color.White);
 
             ConfigureGunaCombo(cmbFigures, comboBg, textColor);
@@ -286,50 +291,35 @@ namespace _3D_SHAPE_EXPLORER
 
         private void SetupEventHandlers()
         {
+            // BOTÓN DE ÓRBITA
+            btnOrbit.Click += (s, e) => {
+                isLightOrbiting = !isLightOrbiting;
+                if (isLightOrbiting) orbitTimer.Start();
+                else orbitTimer.Stop();
+                btnOrbit.FillColor = isLightOrbiting ? Color.FromArgb(255, 193, 7) : accentColor;
+                btnOrbit.ForeColor = isLightOrbiting ? Color.Black : Color.White;
+            };
+
             // DIBUJADO
             picCanvas.Paint += (s, e) => {
                 bool isInEditMode = rbtnVertex.Checked || rbtnEdge.Checked || rbtnFace.Checked;
                 renderer.Draw(e.Graphics, sceneManager.Shapes, picCanvas.Size, sceneManager, isInEditMode, currentPaintColor, light);
             };
 
-            // MOUSE DOWN - Iniciar arrastre de luz con click derecho
-            picCanvas.MouseDown += (s, e) => {
-                if (e.Button == MouseButtons.Right)
-                {
-                    isDraggingLight = true;
-                    lastMousePosition = e.Location;
-                    
-                    // Detener la órbita automática si estaba activa
-                    if (isLightOrbiting)
-                    {
-                        isLightOrbiting = false;
-                        orbitTimer.Stop();
-                    }
-                }
-            };
-
-            // MOUSE MOVE - Mover la luz arrastrando con click derecho
+            // MOUSE MOVE (LERP / SUAVE)
             picCanvas.MouseMove += (s, e) => {
-                if (isDraggingLight && e.Button == MouseButtons.Right)
-                {
-                    // Calcular el delta del movimiento
-                    int deltaX = e.X - lastMousePosition.X;
-                    int deltaY = e.Y - lastMousePosition.Y;
-                    
-                    // Mover la luz basándose en el delta (más intuitivo)
-                    light.Position.X += deltaX * 3f;
-                    light.Position.Y -= deltaY * 3f; // Invertir Y para que sea más natural
-                    
-                    lastMousePosition = e.Location;
-                    picCanvas.Invalidate();
-                }
-            };
-
-            // MOUSE UP - Terminar arrastre
-            picCanvas.MouseUp += (s, e) => {
                 if (e.Button == MouseButtons.Right)
                 {
-                    isDraggingLight = false;
+                    isLightOrbiting = false;
+                    orbitTimer.Stop();
+
+                    targetLightPos.X = (e.X - picCanvas.Width / 2) * 2;
+                    targetLightPos.Y = (e.Y - picCanvas.Height / 2) * 2;
+
+                    light.Position.X += (targetLightPos.X - light.Position.X) * 0.15f;
+                    light.Position.Y += (targetLightPos.Y - light.Position.Y) * 0.15f;
+
+                    picCanvas.Invalidate();
                 }
             };
 
@@ -348,8 +338,6 @@ namespace _3D_SHAPE_EXPLORER
                 sceneManager.Camera.Reset();
                 sceneManager.Camera.SetIsometricView();
                 light.Position = new Point3D(500, -500, -500);
-                isLightOrbiting = false;
-                orbitTimer.Stop();
                 picCanvas.Invalidate();
                 inputController?.RefocusCanvas();
             };
@@ -506,27 +494,14 @@ namespace _3D_SHAPE_EXPLORER
 
         private void ShapeExplorerForm_KeyDown(object sender, KeyEventArgs e)
         {
-            // Ctrl+T: Cambiar tema
             if (e.Control && e.KeyCode == Keys.T)
             {
                 if (swTheme != null) swTheme.Checked = !swTheme.Checked;
                 else { isDarkMode = !isDarkMode; ApplyTheme(); }
                 e.Handled = true;
             }
-            
-            // F6: Mostrar ayuda
-            if (e.KeyCode == Keys.F6) 
-            { 
-                ShowHelp(); 
-                e.Handled = true; 
-            }
-            
-            // G: Activar/desactivar órbita de la luz
-            if (e.KeyCode == Keys.B) 
-            { 
-                ToggleLightOrbit(); 
-                e.Handled = true; 
-            }
+            if (e.KeyCode == Keys.F6) { ShowHelp(); e.Handled = true; }
+            if (e.KeyCode == Keys.O) { btnOrbit.PerformClick(); e.Handled = true; }
         }
 
         private void SetupArrowKeysSuppression()

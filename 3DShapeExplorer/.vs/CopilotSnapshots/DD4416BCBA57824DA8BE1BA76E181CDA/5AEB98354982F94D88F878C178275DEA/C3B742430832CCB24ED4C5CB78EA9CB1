@@ -522,7 +522,7 @@ namespace _3D_SHAPE_EXPLORER
             }
             
             // G: Activar/desactivar órbita de la luz
-            if (e.KeyCode == Keys.B) 
+            if (e.KeyCode == Keys.G) 
             { 
                 ToggleLightOrbit(); 
                 e.Handled = true; 

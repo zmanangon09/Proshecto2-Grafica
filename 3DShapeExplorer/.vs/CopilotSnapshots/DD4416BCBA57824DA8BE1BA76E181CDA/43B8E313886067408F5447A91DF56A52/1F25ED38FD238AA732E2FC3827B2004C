@@ -1,4 +1,4 @@
-﻿using _3D_SHAPE_EXPLORER.Models;
+﻿using _3D_SHAPE_EXPLORER.Utils;
 using System.Drawing;
 
 namespace _3D_SHAPE_EXPLORER.Models
