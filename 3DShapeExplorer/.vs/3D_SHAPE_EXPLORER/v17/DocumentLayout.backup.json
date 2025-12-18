@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\forms\\shapeexplorerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|c:\\users\\alejo\\documentos\\6to semestre\\grafica\\p2\\proshecto\\newrepo\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\forms\\shapeexplorerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\forms\\shapeexplorerform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\sphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|c:\\users\\alejo\\documentos\\6to semestre\\grafica\\p2\\proshecto\\newrepo\\proshecto2-grafica\\3dshapeexplorer\\3d_shape_explorer\\models\\cone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3d_shape_explorer\\models\\cone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3EBFD950-1FBC-4179-9707-B57E958233CB}|3D_SHAPE_EXPLORER\\3D_SHAPE_EXPLORER.csproj|solutionrelative:3d_shape_explorer\\models\\cone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -141,7 +141,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 298,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -161,16 +161,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Cone.cs",
-              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cone.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\Cone.cs",
-              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cone.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Cone.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "ShapeExplorerForm.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
+              "ViewState": "AgIAAJQAAAAAAAAAAAArwAcCAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T13:04:19.213Z",
+              "WhenOpened": "2025-12-16T13:02:15.479Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
             },
             {
               "$type": "Document",
@@ -182,8 +190,7 @@
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\LightSource.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAABBwAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T02:51:33.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T02:51:33.809Z"
             },
             {
               "$type": "Document",
@@ -207,8 +214,7 @@
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Services\\KeyboardController.cs",
               "ViewState": "AgIAACAAAAAAAAAAAAAnwC4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T12:58:52.206Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T12:58:52.206Z"
             },
             {
               "$type": "Document",
@@ -236,19 +242,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ShapeExplorerForm.cs",
-              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
-              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
-              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
-              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
-              "ViewState": "AgIAAAACAAAAAAAAAAAnwAcCAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T13:02:15.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "ShapeExplorerForm.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs",
@@ -256,16 +249,19 @@
               "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs [Dise\u00F1o]",
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T14:53:50.45Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-12-16T14:53:50.45Z"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Cone.cs",
+              "DocumentMoniker": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cone.cs",
+              "RelativeDocumentMoniker": "3D_SHAPE_EXPLORER\\Models\\Cone.cs",
+              "ToolTip": "C:\\Users\\alejo\\Documentos\\6to Semestre\\grafica\\P2\\PROSHECTO\\newrepo\\Proshecto2-Grafica\\3DShapeExplorer\\3D_SHAPE_EXPLORER\\Models\\Cone.cs",
+              "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Cone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-16T13:04:19.213Z"
             },
             {
               "$type": "Document",
@@ -277,8 +273,7 @@
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Models\\Sphere.cs",
               "ViewState": "AgIAAIoAAAAAAAAAAAAQwKoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T13:03:58.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T13:03:58.247Z"
             },
             {
               "$type": "Document",
@@ -559,8 +554,7 @@
               "RelativeToolTip": "3D_SHAPE_EXPLORER\\Forms\\ShapeExplorerForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-16T13:07:56.42Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-16T13:07:56.42Z"
             }
           ]
         }
